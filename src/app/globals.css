@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+:root {
+  /* Color Tokens — DESIGN.MD Section 3 */
+  --color-primary-700: #2457D6;
+  --color-primary-600: #3267E8;
+  --color-primary-100: #EAF0FF;
+  --color-primary-50: #F5F7FF;
+  --color-bg: #F5F7FB;
+  --color-surface: #FFFFFF;
+  --color-text: #172033;
+  --color-text-secondary: #647089;
+  --color-text-muted: #8791A5;
+  --color-border: #E5E9F2;
+  --color-success: #16845B;
+  --color-success-bg: #E8F7F0;
+  --color-warning: #B7791F;
+  --color-warning-bg: #FFF6E5;
+  --color-danger: #D64545;
+  --color-danger-bg: #FFF0F0;
+  --color-info: #2875C7;
+
+  /* Spacing — DESIGN.MD Section 5 (4px base) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* Radius — DESIGN.MD Section 5 */
+  --radius-control: 11px;
+  --radius-card: 16px;
+  --radius-modal: 18px;
+  --radius-pill: 999px;
+
+  /* Shadows — DESIGN.MD Section 5 */
+  --shadow-card: 0 2px 10px rgba(22, 34, 58, 0.04);
+  --shadow-popover: 0 8px 28px rgba(22, 34, 58, 0.12);
+  --shadow-modal: 0 18px 60px rgba(22, 34, 58, 0.18);
+
+  /* Motion — DESIGN.MD Section 10 */
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-enter: cubic-bezier(0, 0, 0.2, 1);
+  --ease-exit: cubic-bezier(0.4, 0, 1, 1);
+  --motion-fast: 120ms;
+  --motion-normal: 190ms;
+  --motion-slow: 280ms;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-inter), Inter, "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tabular numbers for Exam Timer & Question Numbers — DESIGN.MD Section 4 */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Arabic Typography Support for Bahasa Arab, BTQ, Qur'an Hadits, Fiqih, Aqidah */
+.arabic-text {
+  font-family: var(--font-amiri), "Amiri", "Traditional Arabic", "Scheherazade New", serif;
+  line-height: 2.15;
+  font-size: 1.38em;
+  letter-spacing: 0;
+}
+
+.question-content u {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+  text-decoration-color: var(--color-primary-700);
+}
+
+/* Focus visible accessibility ring — DESIGN.MD Section 13 */
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--color-primary-700);
+  outline-offset: 2px;
+}
+
+/* Gentle floating ornament animation ONLY for login/hero — DESIGN.MD Section 10 & 11 */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(1.5deg);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 9s ease-in-out infinite;
+}
+
+/* Respect System Reduced Motion — DESIGN.MD Section 10 */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

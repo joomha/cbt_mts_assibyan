@@ -28,6 +28,7 @@ interface RosterItem {
   id: string;
   fullName: string;
   className: ClassLevel;
+  roomName?: string;
   participantNumberHint: string;
 }
 
@@ -89,12 +90,15 @@ export default function HomePage() {
     if (saved) {
       try {
         const parsed = JSON.parse(saved) as StudentProfile;
-        // Abaikan sesi akun dummy lama jika masih tersimpan di browser
+        // Abaikan sesi akun dummy atau format lama jika masih tersimpan di browser
         if (
           parsed &&
           parsed.id &&
           parsed.fullName &&
-          !['std-1', 'std-2', 'std-3', 'std-4'].includes(parsed.id)
+          !['std-1', 'std-2', 'std-3', 'std-4'].includes(parsed.id) &&
+          !parsed.id.startsWith('std-7-') &&
+          !parsed.id.startsWith('std-8-') &&
+          !parsed.id.startsWith('std-9-')
         ) {
           setStudent(parsed);
           setClassFilter(parsed.className || 'VII');
@@ -442,36 +446,47 @@ export default function HomePage() {
                     </p>
                   </div>
 
-                  {/* Pilihan Kelas (VII, VIII, IX) */}
+                  {/* Pilihan Kelas & Ruang Ujian (VII/Ruang 01, VIII/Ruang 02, IX/Ruang 03) */}
                   <div>
                     <label className="block text-[13px] font-medium text-[#172033] mb-1.5">
-                      Kelas Peserta
+                      Kelas & Ruang Ujian
                     </label>
                     <div className="grid grid-cols-3 gap-2">
-                      {(['VII', 'VIII', 'IX'] as const).map((cls) => (
+                      {(
+                        [
+                          { cls: 'VII' as const, room: 'RUANG 01' },
+                          { cls: 'VIII' as const, room: 'RUANG 02' },
+                          { cls: 'IX' as const, room: 'RUANG 03' },
+                        ]
+                      ).map(({ cls, room }) => (
                         <button
                           key={cls}
                           type="button"
                           onClick={() => setSelectedClass(cls)}
-                          className={`py-2.5 px-2.5 rounded-[11px] border text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
+                          className={`py-2 px-2 rounded-[11px] border text-center transition-all cursor-pointer ${
                             selectedClass === cls
                               ? 'border-[#2457D6] bg-[#EAF0FF] text-[#2457D6]'
                               : 'border-[#E5E9F2] bg-white text-[#647089] hover:border-[#8791A5]'
                           }`}
                         >
-                          Kelas {cls}
+                          <span className="block text-xs sm:text-sm font-bold">
+                            Kelas {cls}
+                          </span>
+                          <span className="block text-[10px] font-medium opacity-80">
+                            {room}
+                          </span>
                         </button>
                       ))}
                     </div>
                   </div>
 
-                  {/* Input 1: Nama Siswa (KAPITAL) dengan Datalist Roster Resmi */}
+                  {/* Input 1: Nama Peserta (KAPITAL) sesuai Kartu Peserta */}
                   <div>
                     <label
                       htmlFor="fullName"
                       className="block text-[13px] font-medium text-[#172033] mb-1.5"
                     >
-                      Nama Lengkap Siswa (HURUF KAPITAL)
+                      Nama Peserta (HURUF KAPITAL)
                     </label>
                     <input
                       id="fullName"
@@ -483,17 +498,18 @@ export default function HomePage() {
                       onChange={(e) => setFullName(e.target.value.toUpperCase())}
                       placeholder={
                         selectedClass === 'VII'
-                          ? 'Ketik / pilih nama siswa Kelas VII'
+                          ? 'Contoh: AHMAD RIPALDI'
                           : selectedClass === 'VIII'
-                          ? 'Ketik / pilih nama siswa Kelas VIII'
-                          : 'Ketik / pilih nama siswa Kelas IX'
+                          ? 'Contoh: A. SYARIF HIDAYATULLAH'
+                          : 'Contoh: AHMAD KHOWARIQIL ADI'
                       }
                       className="w-full rounded-[11px] border border-[#E5E9F2] bg-white px-3.5 py-2.5 text-[15px] font-semibold uppercase tracking-wide text-[#172033] placeholder:font-normal placeholder:normal-case placeholder:text-[#8791A5] focus:border-[#2457D6] transition-colors"
                     />
                     <datalist id="student-roster-list">
                       {classRoster.map((item) => (
                         <option key={item.id} value={item.fullName}>
-                          Kelas {item.className} — No. {item.participantNumberHint}
+                          Kelas {item.className} ({item.roomName || 'RUANG 01'}) —{' '}
+                          {item.participantNumberHint}
                         </option>
                       ))}
                     </datalist>
@@ -501,20 +517,21 @@ export default function HomePage() {
                       <p className="mt-1 text-[12px] text-[#16845B] font-medium flex items-center gap-1">
                         <CheckCircle2 className="w-3.5 h-3.5 shrink-0" />
                         <span>
-                          Terdaftar di Kelas {matchedRosterStudent.className} (No. Ujian:{' '}
-                          <strong>{matchedRosterStudent.participantNumberHint}</strong>)
+                          Kelas {matchedRosterStudent.className} •{' '}
+                          {matchedRosterStudent.roomName || 'RUANG 01'} — Nomor Peserta:{' '}
+                          <strong>{matchedRosterStudent.participantNumberHint}</strong>
                         </span>
                       </p>
                     )}
                   </div>
 
-                  {/* Input 2: Nomor Peserta / Password Kartu Ujian */}
+                  {/* Input 2: Nomor Peserta sesuai Kartu Peserta */}
                   <div>
                     <label
                       htmlFor="participantNumber"
                       className="block text-[13px] font-medium text-[#172033] mb-1.5"
                     >
-                      Nomor Peserta / Password Kartu Ujian
+                      Nomor Peserta
                     </label>
                     <input
                       id="participantNumber"
@@ -522,36 +539,17 @@ export default function HomePage() {
                       required
                       autoComplete="off"
                       value={participantNumber}
-                      onChange={(e) => setParticipantNumber(e.target.value)}
+                      onChange={(e) => setParticipantNumber(e.target.value.toUpperCase())}
                       placeholder={
                         matchedRosterStudent
-                          ? `Ketik ${matchedRosterStudent.participantNumberHint} atau Assibyan${matchedRosterStudent.participantNumberHint.replace('-', '')}`
-                          : selectedClass === 'VII'
-                          ? 'Contoh: 7-001 atau Assibyan7001'
-                          : selectedClass === 'VIII'
-                          ? 'Contoh: 8-001 atau Assibyan8001'
-                          : 'Contoh: 9-001 atau Assibyan9001'
+                          ? `Ketik ${matchedRosterStudent.participantNumberHint}`
+                          : 'Contoh: PAS-2026-001'
                       }
-                      className="w-full rounded-[11px] border border-[#E5E9F2] bg-white px-3.5 py-2.5 text-[15px] font-medium tabular-nums text-[#172033] placeholder:font-normal placeholder:text-[#8791A5] focus:border-[#2457D6] transition-colors"
+                      className="w-full rounded-[11px] border border-[#E5E9F2] bg-white px-3.5 py-2.5 text-[15px] font-semibold uppercase tabular-nums text-[#172033] placeholder:font-normal placeholder:normal-case placeholder:text-[#8791A5] focus:border-[#2457D6] transition-colors"
                     />
                     <p className="mt-1 text-[11px] text-[#647089]">
-                      Dapat diisi dengan <strong>No. Ujian</strong> (misal:{' '}
-                      <code>
-                        {selectedClass === 'VII'
-                          ? '7-001'
-                          : selectedClass === 'VIII'
-                          ? '8-001'
-                          : '9-001'}
-                      </code>
-                      ) atau <strong>Password Kartu</strong> (misal:{' '}
-                      <code>
-                        {selectedClass === 'VII'
-                          ? 'Assibyan7001'
-                          : selectedClass === 'VIII'
-                          ? 'Assibyan8001'
-                          : 'Assibyan9001'}
-                      </code>
-                      ).
+                      Masukkan Nomor Peserta sesuai Kartu Peserta (contoh:{' '}
+                      <code>PAS-2026-001</code> atau cukup 3 digit <code>001</code>).
                     </p>
                   </div>
 

@@ -7,24 +7,12 @@ import React from 'react';
  */
 export function OpenBookLogo({ className = 'w-9 h-9' }: { className?: string }) {
   return (
-    <svg
-      viewBox="0 0 48 48"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className={className}
-      aria-hidden="true"
-    >
-      <rect width="48" height="48" rx="12" fill="#2457D6" />
-      <path
-        d="M12 16C12 14.3431 13.3431 13 15 13H21.5C22.8807 13 24 14.1193 24 15.5V34.5C24 33.6716 23.3284 33 22.5 33H15C13.3431 33 12 31.6569 12 30V16Z"
-        fill="#FFFFFF"
-      />
-      <path
-        d="M36 16C36 14.3431 34.6569 13 33 13H26.5C25.1193 13 24 14.1193 24 15.5V34.5C24 33.6716 24.6716 33 25.5 33H33C34.6569 33 36 31.6569 36 30V16Z"
-        fill="#EAF0FF"
-      />
-      <circle cx="24" cy="8.5" r="2" fill="#EAF0FF" />
-    </svg>
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src="/logo-mts-assibyan.png"
+      alt="Logo MTs Assibyan"
+      className={`${className} object-contain`}
+    />
   );
 }
 

@@ -4,9 +4,11 @@ export type ClassLevel = 'VII' | 'VIII' | 'IX';
 
 export interface StudentProfile {
   id: string;
-  fullName: string; // HURUF KAPITAL (contoh: "AHMAD KHOWARIQIL ADI")
-  participantNumber: string; // Nomor Peserta (contoh: "7-001", "8-001", "9-001")
-  passwordCode?: string; // Password pada Kartu Ujian (contoh: "Assibyan7001")
+  fullName: string; // HURUF KAPITAL (contoh: "AHMAD RIPALDI")
+  participantNumber: string; // Nomor Peserta pada Kartu Peserta (contoh: "PAS-2026-001")
+  shortNumber?: string; // Nomor urut 3 digit (contoh: "001")
+  roomName?: string; // Ruang Ujian (contoh: "RUANG 01", "RUANG 02", "RUANG 03")
+  aliases?: string[]; // Variasi penulisan nama (contoh: ["AHMAD SYARIF HIDAYATULLAH"])
   className: ClassLevel;
   createdAt: string;
 }

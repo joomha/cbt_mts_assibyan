@@ -9,6 +9,13 @@ export async function GET() {
     id: s.id,
     fullName: s.fullName,
     className: s.className,
+    roomName:
+      s.roomName ||
+      (s.className === 'VII'
+        ? 'RUANG 01'
+        : s.className === 'VIII'
+        ? 'RUANG 02'
+        : 'RUANG 03'),
     participantNumberHint: s.participantNumber,
   }));
 

@@ -1074,7 +1074,7 @@ export default function AdminDashboardPage() {
                         required
                         value={newStudentNo}
                         onChange={(e) => setNewStudentNo(e.target.value)}
-                        placeholder="7-014"
+                        placeholder="PAS-2026-019"
                         className="w-full rounded-[10px] border border-[#E5E9F2] px-3 py-2 text-sm tabular-nums"
                       />
                     </div>
@@ -1104,20 +1104,20 @@ export default function AdminDashboardPage() {
                   </button>
                 </form>
 
-                {/* Bulk Import dari Excel / Spreadsheet */}
+                  {/* Bulk Import dari Excel / Spreadsheet */}
                 <div className="rounded-[16px] border border-[#E5E9F2] bg-white p-5 space-y-3">
                   <h2 className="text-base font-bold text-[#172033]">
                     Impor Cepat Peserta Tambahan (Copy-Paste Excel)
                   </h2>
                   <p className="text-xs text-[#647089]">
-                    63 siswa Kelas VII, VIII, dan IX sudah terdaftar otomatis. Tempel baris tambahan jika ada siswa susulan:{' '}
-                    <code>NAMA SISWA, NOMOR PESERTA, KELAS</code>
+                    51 siswa Kelas VII (Ruang 01), VIII (Ruang 02), dan IX (Ruang 03) sesuai Kartu Peserta sudah terdaftar otomatis. Tempel baris tambahan jika ada siswa susulan:{' '}
+                    <code>NAMA PESERTA, NOMOR PESERTA, KELAS</code>
                   </p>
                   <textarea
                     rows={5}
                     value={bulkStudentText}
                     onChange={(e) => setBulkStudentText(e.target.value.toUpperCase())}
-                    placeholder={`AHMAD KHOWARIQIL ADI, 7-001, VII\nAGUNG GUNAWAN, 8-001, VIII\nA. AJRIL SAPUTRA, 9-001, IX`}
+                    placeholder={`AHMAD RIPALDI, PAS-2026-001, VII\nA. SYARIF HIDAYATULLAH, PAS-2026-001, VIII\nAHMAD KHOWARIQIL ADI, PAS-2026-001, IX`}
                     className="w-full rounded-[10px] border border-[#E5E9F2] p-3 text-xs font-mono uppercase"
                   />
                   <button
@@ -1161,7 +1161,12 @@ export default function AdminDashboardPage() {
                           <td className="py-2.5 px-4 font-mono font-semibold text-[#2457D6]">
                             {s.participantNumber}
                           </td>
-                          <td className="py-2.5 px-4">Kelas {s.className}</td>
+                          <td className="py-2.5 px-4">
+                            Kelas {s.className}{' '}
+                            <span className="text-xs text-[#647089]">
+                              ({s.roomName || (s.className === 'VII' ? 'RUANG 01' : s.className === 'VIII' ? 'RUANG 02' : 'RUANG 03')})
+                            </span>
+                          </td>
                           <td className="py-2.5 px-4 text-right">
                             <button
                               type="button"

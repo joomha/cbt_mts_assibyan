@@ -35,6 +35,15 @@ interface DatabaseShape {
 
 const DUMMY_STUDENT_IDS = new Set(['std-1', 'std-2', 'std-3', 'std-4']);
 
+function isLegacyStudentId(id: string): boolean {
+  return (
+    DUMMY_STUDENT_IDS.has(id) ||
+    id.startsWith('std-7-') ||
+    id.startsWith('std-8-') ||
+    id.startsWith('std-9-')
+  );
+}
+
 function buildSeedExamsAndQuestions(): { exams: Exam[]; questions: ExamQuestion[] } {
   const exams: Exam[] = [];
   const questions: ExamQuestion[] = [];
@@ -140,9 +149,9 @@ export function loadDb(): DatabaseShape {
       const raw = fs.readFileSync(filePath, 'utf8');
       const parsed = JSON.parse(raw) as DatabaseShape;
       if (parsed && Array.isArray(parsed.exams)) {
-        // Selalu sinkronkan paket soal & daftar 63 siswa resmi terbaru, dan hapus 4 akun dummy lama
+        // Selalu sinkronkan paket soal & daftar 51 siswa resmi Kartu Peserta PAS 2026/2027
         const existingStudents = Array.isArray(parsed.students)
-          ? parsed.students.filter((s) => !DUMMY_STUDENT_IDS.has(s.id))
+          ? parsed.students.filter((s) => !isLegacyStudentId(s.id))
           : [];
         const studentMap = new Map<string, StudentProfile>();
         for (const s of REAL_STUDENTS_SEED) {
@@ -222,32 +231,70 @@ export function normalizeStudentName(name: string): string {
 }
 
 /**
- * Normalisasi longgar untuk pencocokan nama (mengabaikan titik, koma, tanda petik)
- * agar "A. AJRIL SAPUTRA" cocok dengan "A AJRIL SAPUTRA", dsb.
+ * Normalisasi longgar untuk pencocokan nama (mengabaikan titik, tanda hubung, tanda petik, serta variasi MUHAMMAD/MUHAMAD)
  */
 function looseNameKey(name: string): string {
-  return normalizeStudentName(name).replace(/[^A-Z0-9 ]/g, '').replace(/\s+/g, ' ').trim();
+  return normalizeStudentName(name)
+    .replace(/[^A-Z0-9 ]/g, ' ')
+    .replace(/\bMUHAMMAD\b/g, 'MUHAMAD')
+    .replace(/\bMOHAMMAD\b/g, 'MUHAMAD')
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
-/**
- * Mencocokkan input Nomor Peserta / Password Kartu Ujian dengan profil siswa
- * Menerima: "7-001", "7001", "Assibyan7001", "ASSIBYAN7001", dsb.
- */
-function matchesStudentCredential(student: StudentProfile, rawInput: string): boolean {
-  const input = rawInput.trim().toLowerCase();
-  const numLower = student.participantNumber.toLowerCase();
-  const numDigits = numLower.replace(/[^0-9]/g, '');
-  const passLower = (student.passwordCode || `assibyan${numDigits}`).toLowerCase();
-  const inputDigits = input.replace(/[^0-9]/g, '');
-
-  if (input === numLower || input === passLower) return true;
-  if (numDigits && input === numDigits) return true;
-  if (numDigits && inputDigits === numDigits && input.includes('assibyan')) return true;
+function matchesStudentName(student: StudentProfile, rawInputName: string): boolean {
+  const targetKey = looseNameKey(rawInputName);
+  if (!targetKey) return false;
+  if (looseNameKey(student.fullName) === targetKey) return true;
+  if (Array.isArray(student.aliases)) {
+    for (const alias of student.aliases) {
+      if (looseNameKey(alias) === targetKey) return true;
+    }
+  }
   return false;
 }
 
 /**
- * Autentikasi Siswa menggunakan NAMA SISWA (KAPITAL) dan NOMOR PESERTA / PASSWORD KARTU UJIAN
+ * Mencocokkan input Nomor Peserta pada Kartu Peserta (contoh: "PAS-2026-001", "001", "2026-001", "1")
+ */
+function matchesStudentCredential(student: StudentProfile, rawInput: string): boolean {
+  const input = rawInput.trim().toUpperCase().replace(/\s+/g, '');
+  if (!input) return false;
+
+  const fullCardNo = student.participantNumber.toUpperCase().replace(/\s+/g, ''); // "PAS-2026-001"
+  const fullCardCompact = fullCardNo.replace(/[^A-Z0-9]/g, ''); // "PAS2026001"
+  const inputCompact = input.replace(/[^A-Z0-9]/g, '');
+
+  if (input === fullCardNo || inputCompact === fullCardCompact) {
+    return true;
+  }
+
+  // Ambil 3 digit nomor urut siswa (contoh: "001" -> 1)
+  const shortStr =
+    student.shortNumber ||
+    (fullCardNo.match(/(\d{1,3})$/) ? fullCardNo.match(/(\d{1,3})$/)![1].padStart(3, '0') : '');
+  const shortNum = parseInt(shortStr, 10);
+
+  if (shortStr) {
+    if (
+      input === shortStr ||
+      inputCompact === `2026${shortStr}` ||
+      inputCompact === `PAS${shortStr}`
+    ) {
+      return true;
+    }
+    // Jika siswa mengetik "1" untuk "001" atau "PAS-2026-1"
+    const tailMatch = input.match(/(?:^|PAS-?2026-?|2026-?)0*(\d{1,3})$/);
+    if (tailMatch && parseInt(tailMatch[1], 10) === shortNum) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
+/**
+ * Autentikasi Siswa menggunakan NAMA PESERTA (KAPITAL) dan NOMOR PESERTA (PAS-2026-XXX) sesuai Kartu Peserta
  */
 export async function authenticateStudent(
   rawName: string,
@@ -255,52 +302,59 @@ export async function authenticateStudent(
   preferredClass?: ClassLevel
 ): Promise<{ ok: true; student: StudentProfile } | { ok: false; error: string }> {
   const fullName = normalizeStudentName(rawName);
-  const participantNumber = rawParticipantNumber.trim();
+  const participantNumber = rawParticipantNumber.trim().toUpperCase();
 
   if (!fullName || fullName.length < 2) {
     return {
       ok: false,
-      error: 'Masukkan Nama Lengkap Siswa dengan benar (HURUF KAPITAL).',
+      error: 'Masukkan Nama Peserta dengan benar sesuai Kartu Peserta (HURUF KAPITAL).',
     };
   }
 
-  if (!participantNumber || participantNumber.length < 3) {
+  if (!participantNumber || participantNumber.length < 1) {
     return {
       ok: false,
-      error: 'Masukkan Nomor Peserta (contoh: 7-001) atau Password Kartu Ujian (contoh: Assibyan7001).',
+      error: 'Masukkan Nomor Peserta sesuai Kartu Peserta (contoh: PAS-2026-001).',
     };
   }
 
   const db = loadDb();
 
-  // 1. Cari terlebih dahulu berdasarkan Nama Siswa (pencocokan persis maupun longgar tanpa tanda titik/petik)
-  const byName = db.students.find(
-    (s) =>
-      normalizeStudentName(s.fullName) === fullName ||
-      looseNameKey(s.fullName) === looseNameKey(fullName)
-  );
+  // 1. Cari terlebih dahulu berdasarkan Nama Peserta (prioritaskan kelas yang dipilih bila ada)
+  const nameMatches = db.students.filter((s) => matchesStudentName(s, fullName));
+  const byName =
+    (preferredClass
+      ? nameMatches.find((s) => s.className === preferredClass)
+      : undefined) || nameMatches[0];
 
   if (byName) {
     if (!matchesStudentCredential(byName, participantNumber)) {
       return {
         ok: false,
-        error: `Nomor Peserta / Password untuk ${byName.fullName} tidak sesuai. Gunakan No. Ujian (${byName.participantNumber}) atau Password Kartu (${byName.passwordCode || 'Assibyan' + byName.participantNumber.replace('-', '')}).`,
+        error: `Nomor Peserta untuk ${byName.fullName} (Kelas ${byName.className} • ${
+          byName.roomName || 'RUANG 01'
+        }) tidak sesuai. Ketik Nomor Peserta sesuai kartu Anda: ${byName.participantNumber}`,
       };
     }
     return { ok: true, student: byName };
   }
 
-  // 2. Cari berdasarkan Nomor Peserta / Password Kartu Ujian
-  const byNumber = db.students.find((s) => matchesStudentCredential(s, participantNumber));
+  // 2. Cari berdasarkan Nomor Peserta pada Kelas yang dipilih (karena PAS-2026-001 ada di Kelas VII, VIII, dan IX)
+  const credMatches = db.students.filter((s) =>
+    matchesStudentCredential(s, participantNumber)
+  );
+  const byNumberInClass = preferredClass
+    ? credMatches.find((s) => s.className === preferredClass)
+    : credMatches[0];
 
-  if (byNumber) {
-    if (looseNameKey(byNumber.fullName) !== looseNameKey(fullName)) {
-      return {
-        ok: false,
-        error: `Nomor Peserta ${byNumber.participantNumber} terdaftar atas nama ${byNumber.fullName}. Pastikan Nama Lengkap Anda sesuai Kartu Ujian.`,
-      };
-    }
-    return { ok: true, student: byNumber };
+  if (byNumberInClass) {
+    const namesInAllRooms = credMatches
+      .map((s) => `${s.fullName} (Kelas ${s.className})`)
+      .join(' / ');
+    return {
+      ok: false,
+      error: `Nomor Peserta ${byNumberInClass.participantNumber} terdaftar untuk: ${namesInAllRooms}. Pastikan ejaan Nama Peserta dan pilihan Kelas Anda sesuai Kartu Peserta.`,
+    };
   }
 
   // 3. Jika belum terdaftar dan mode dynamic login aktif (default: aktif agar siswa susulan tidak pernah terkunci)
@@ -308,28 +362,31 @@ export async function authenticateStudent(
     return {
       ok: false,
       error:
-        'Data peserta belum terdaftar di sistem. Silakan periksa ejaan Nama Lengkap sesuai Kartu Ujian atau hubungi Pengawas.',
+        'Data peserta tidak ditemukan. Pastikan Nama Peserta dan Nomor Peserta (PAS-2026-XXX) sesuai dengan Kartu Peserta Anda.',
     };
   }
 
-  // Deteksi kelas otomatis dari nomor peserta atau pilihan kelas siswa
-  let detectedClass: ClassLevel = preferredClass || 'VII';
-  const cleanDigits = participantNumber.replace(/^assibyan/i, '').trim();
-  if (cleanDigits.startsWith('9') || cleanDigits.includes('09')) {
-    detectedClass = 'IX';
-  } else if (cleanDigits.startsWith('8') || cleanDigits.includes('08')) {
-    detectedClass = 'VIII';
-  } else if (cleanDigits.startsWith('7') || cleanDigits.includes('07')) {
-    detectedClass = 'VII';
-  }
+  const detectedClass: ClassLevel = preferredClass || 'VII';
+  const roomMap: Record<ClassLevel, string> = {
+    VII: 'RUANG 01',
+    VIII: 'RUANG 02',
+    IX: 'RUANG 03',
+  };
+  const formattedNo = /^\d{1,3}$/.test(participantNumber)
+    ? `PAS-2026-${participantNumber.padStart(3, '0')}`
+    : participantNumber;
 
-  const deterministicId = `std-dyn-${looseNameKey(fullName).replace(/\s+/g, '-')}-${cleanDigits.replace(/[^a-zA-Z0-9]/g, '')}`;
+  const deterministicId = `std-dyn-${detectedClass}-${looseNameKey(fullName).replace(
+    /\s+/g,
+    '-'
+  )}-${formattedNo.replace(/[^A-Z0-9]/g, '')}`;
 
   const newStudent: StudentProfile = {
     id: deterministicId,
     fullName,
-    participantNumber,
+    participantNumber: formattedNo,
     className: detectedClass,
+    roomName: roomMap[detectedClass],
     createdAt: new Date().toISOString(),
   };
 

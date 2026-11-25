@@ -22,8 +22,12 @@ function buat1_BahasaInggris_Kelas7_8_9() {
   jalankanBatchMapelHari3(['BING-VII', 'BING-VIII', 'BING-IX']);
 }
 
+function buat2_Fiqih_Kelas7_dan_8_Saja() {
+  jalankanBatchMapelHari3(['FIQIH-VII', 'FIQIH-VIII']);
+}
+
 function buat2_Fiqih_Kelas7_8_9() {
-  jalankanBatchMapelHari3(['FQH-VII', 'FQH-VIII', 'FQH-IX']);
+  jalankanBatchMapelHari3(['FIQIH-VII', 'FIQIH-VIII', 'FQH-IX']);
 }
 
 function buat3_Informatika_Kelas7_8_9() {
@@ -33,7 +37,7 @@ function buat3_Informatika_Kelas7_8_9() {
 function buatSemuaGoogleFormHari3() {
   jalankanBatchMapelHari3([
     'BING-VII', 'BING-VIII', 'BING-IX',
-    'FQH-VII', 'FQH-VIII', 'FQH-IX',
+    'FIQIH-VII', 'FIQIH-VIII', 'FQH-IX',
     'INF-VII', 'INF-VIII', 'INF-IX'
   ]);
 }

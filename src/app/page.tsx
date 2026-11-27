@@ -61,7 +61,7 @@ export default function HomePage() {
   const [attempts, setAttempts] = useState<ExamAttempt[]>([]);
   const [dataLoading, setDataLoading] = useState(false);
   const [classFilter, setClassFilter] = useState<ClassLevel | 'ALL'>('VII');
-  const [dayFilter, setDayFilter] = useState<number | 'ALL'>(3); // Default: Hari Ke-3 (Rabu, 25 Nov 2026)
+  const [dayFilter, setDayFilter] = useState<number | 'ALL'>(6); // Default: Hari Ke-6 (Sabtu, 28 Nov 2026)
 
   // Selected Exam for Instruction & Readiness Confirmation Modal (DESIGN.MD Section 7.3)
   const [selectedExamForDetail, setSelectedExamForDetail] = useState<Exam | null>(null);
@@ -353,20 +353,20 @@ export default function HomePage() {
             <div className="rounded-[16px] border border-[#2457D6]/20 bg-[#EAF0FF]/60 p-4 max-w-lg">
               <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#2457D6]">
                 <Calendar className="w-4 h-4" />
-                Jadwal Hari Ke-3 • Rabu, 25 November 2026
+                Jadwal Hari Ke-6 • Sabtu, 28 November 2026
               </div>
               <div className="mt-2 grid grid-cols-3 gap-2 text-xs">
                 <div className="rounded-[10px] bg-white p-2.5 border border-[#E5E9F2]">
                   <span className="text-[#647089] block text-[11px]">07.30 – 09.30</span>
-                  <strong className="text-[#172033]">Bahasa Inggris</strong>
+                  <strong className="text-[#172033]">IPS</strong>
                 </div>
                 <div className="rounded-[10px] bg-white p-2.5 border border-[#E5E9F2]">
                   <span className="text-[#647089] block text-[11px]">10.00 – 11.30</span>
-                  <strong className="text-[#172033]">Fiqih</strong>
+                  <strong className="text-[#172033]">PJOK</strong>
                 </div>
                 <div className="rounded-[10px] bg-white p-2.5 border border-[#E5E9F2]">
                   <span className="text-[#647089] block text-[11px]">11.30 – 13.00</span>
-                  <strong className="text-[#172033]">Informatika</strong>
+                  <strong className="text-[#172033]">Nahwu Shorof</strong>
                 </div>
               </div>
             </div>
@@ -772,6 +772,8 @@ export default function HomePage() {
         <section className="flex flex-wrap items-center justify-between gap-3">
           <div className="flex flex-wrap items-center gap-2">
             {[
+              { key: 6 as const, label: 'Hari Ke-6 • Sabtu (IPS, PJOK, Nahwu Shorof)' },
+              { key: 5 as const, label: 'Hari Ke-5 • Jum’at (IPA, SKI, B. Arab)' },
               { key: 3 as const, label: 'Hari Ke-3 • Rabu (B. Inggris, Fiqih, Informatika)' },
               { key: 2 as const, label: 'Hari Ke-2 • Selasa (MTK, Akidah, BTQ)' },
               { key: 1 as const, label: 'Hari Ke-1 • Senin (B. Indo, QH, Prakarya)' },

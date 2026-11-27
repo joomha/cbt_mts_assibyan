@@ -1,7 +1,7 @@
 // ============================================================================
-// DATA SOAL ASLI MTs ASSIBYAN (29 PAKET UJIAN — 875 SOAL PILIHAN GANDA)
+// DATA SOAL ASLI MTs ASSIBYAN (38 PAKET UJIAN — 1.115 SOAL PILIHAN GANDA)
 // Diekstrak langsung dari dokumen soal resmi ASAS Tahun Pelajaran 2025/2026 - 2026/2027
-// Mencakup Kelas VII, Kelas VIII, dan Kelas IX (Hari Ke-1, Hari Ke-2, Hari Ke-3, Hari Ke-5)
+// Mencakup Kelas VII, Kelas VIII, dan Kelas IX (Hari Ke-1, Hari Ke-2, Hari Ke-3, Hari Ke-5, Hari Ke-6)
 // ============================================================================
 
 export interface QuestionOptionSeed {
@@ -20707,5 +20707,5686 @@ export const INITIAL_EXAMS_SEED: ExamSeed[] = [
     "dayOrder": 5,
     "dayLabel": "Hari Ke-5 • Jum’at, 27 Nov 2026",
     "sessionOrder": 1
+  },
+  {
+    "id": "exam-ips-vii",
+    "code": "ASAS-IPS-VII",
+    "title": "Asesmen Sumatif Akhir Semester — IPS Kelas VII",
+    "subject": "Ilmu Pengetahuan Sosial (IPS)",
+    "classLevel": "VII",
+    "scheduleText": "Sabtu, 28 November 2026 • Jam Ke-1 (07.30 – 09.30 WIB)",
+    "dayOrder": 6,
+    "dayLabel": "Hari Ke-6 • Sabtu, 28 Nov 2026",
+    "sessionOrder": 1,
+    "durationMin": 90,
+    "status": "published",
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "questions": [
+      {
+        "no": 1,
+        "text": "Indonesia terletak di antara dua benua, yaitu….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Asia dan Afrika"
+          },
+          {
+            "key": "B",
+            "text": "Asia dan Australia"
+          },
+          {
+            "key": "C",
+            "text": "Asia dan Amerika"
+          },
+          {
+            "key": "D",
+            "text": "Afrika dan Eropa"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 2,
+        "text": "Garis lintang berfungsi untuk menentukan….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Zona waktu"
+          },
+          {
+            "key": "B",
+            "text": "Iklim"
+          },
+          {
+            "key": "C",
+            "text": "Musim"
+          },
+          {
+            "key": "D",
+            "text": "Suhu permukaan laut"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 3,
+        "text": "Batas wilayah Indonesia di sebelah barat adalah negara….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Filipina"
+          },
+          {
+            "key": "B",
+            "text": "India"
+          },
+          {
+            "key": "C",
+            "text": "Malaysia"
+          },
+          {
+            "key": "D",
+            "text": "Papua Nugini"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 4,
+        "text": "Peta yang menggambarkan kenampakan alam disebut peta….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Umum"
+          },
+          {
+            "key": "B",
+            "text": "Tematik"
+          },
+          {
+            "key": "C",
+            "text": "Khusus"
+          },
+          {
+            "key": "D",
+            "text": "Lingkungan"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 5,
+        "text": "Berikut yang termasuk kenampakan buatan adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Danau"
+          },
+          {
+            "key": "B",
+            "text": "Sungai"
+          },
+          {
+            "key": "C",
+            "text": "Waduk"
+          },
+          {
+            "key": "D",
+            "text": "Gunung"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 6,
+        "text": "Alat untuk mengukur derajat kemiringan permukaan bumi adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Kompas"
+          },
+          {
+            "key": "B",
+            "text": "Altimeter"
+          },
+          {
+            "key": "C",
+            "text": "Klinometer"
+          },
+          {
+            "key": "D",
+            "text": "Barometer"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 7,
+        "text": "Proses pengikisan permukaan bumi oleh angin atau air disebut….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Erosi"
+          },
+          {
+            "key": "B",
+            "text": "Abrasi"
+          },
+          {
+            "key": "C",
+            "text": "Sedimentasi"
+          },
+          {
+            "key": "D",
+            "text": "Korosi"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 8,
+        "text": "Berikut yang termasuk bencana alam geologis adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Gempa bumi"
+          },
+          {
+            "key": "B",
+            "text": "Banjir"
+          },
+          {
+            "key": "C",
+            "text": "Kekeringan"
+          },
+          {
+            "key": "D",
+            "text": "Angin puting beliung"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 9,
+        "text": "Gunung yang masih aktif disebut….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Gunung mati"
+          },
+          {
+            "key": "B",
+            "text": "Gunung berapi"
+          },
+          {
+            "key": "C",
+            "text": "Gunung tegak"
+          },
+          {
+            "key": "D",
+            "text": "Gunung lipat"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 10,
+        "text": "Wilayah dengan curah hujan tinggi biasanya memiliki vegetasi….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Sabana"
+          },
+          {
+            "key": "B",
+            "text": "Hutan hujan tropis"
+          },
+          {
+            "key": "C",
+            "text": "Stepa"
+          },
+          {
+            "key": "D",
+            "text": "Tundra"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 11,
+        "text": "Manusia purba yang ditemukan di Sangiran adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Homo sapiens"
+          },
+          {
+            "key": "B",
+            "text": "Homo erectus"
+          },
+          {
+            "key": "C",
+            "text": "Homo soloensis"
+          },
+          {
+            "key": "D",
+            "text": "Homo wajakensis"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 12,
+        "text": "Zaman batu tua disebut zaman….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Neolitikum"
+          },
+          {
+            "key": "B",
+            "text": "Paleolitikum"
+          },
+          {
+            "key": "C",
+            "text": "Megalitikum"
+          },
+          {
+            "key": "D",
+            "text": "Mesolitikum"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 13,
+        "text": "Alat zaman neolitikum yang terkenal adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Kapak perimbas"
+          },
+          {
+            "key": "B",
+            "text": "Kapak genggam"
+          },
+          {
+            "key": "C",
+            "text": "Kapak lonjong"
+          },
+          {
+            "key": "D",
+            "text": "Alat serpih"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 14,
+        "text": "Kerajaan Hindu-Buddha tertua di Indonesia adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Majapahit"
+          },
+          {
+            "key": "B",
+            "text": "Sriwijaya"
+          },
+          {
+            "key": "C",
+            "text": "Kutai"
+          },
+          {
+            "key": "D",
+            "text": "Mataram"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 15,
+        "text": "Kerajaan Sriwijaya berkembang di daerah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Sumatra Utara"
+          },
+          {
+            "key": "B",
+            "text": "Jawa Timur"
+          },
+          {
+            "key": "C",
+            "text": "Sumatra Selatan"
+          },
+          {
+            "key": "D",
+            "text": "Kalimantan Timur"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 16,
+        "text": "Pendiri Kerajaan Majapahit adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Ken Arok"
+          },
+          {
+            "key": "B",
+            "text": "Gajah Mada"
+          },
+          {
+            "key": "C",
+            "text": "Raden Wijaya"
+          },
+          {
+            "key": "D",
+            "text": "Hayam Wuruk"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 17,
+        "text": "Sumpah Palapa berasal dari tokoh….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hayam Wuruk"
+          },
+          {
+            "key": "B",
+            "text": "Raden Wijaya"
+          },
+          {
+            "key": "C",
+            "text": "Ken Dedes"
+          },
+          {
+            "key": "D",
+            "text": "Gajah Mada"
+          }
+        ],
+        "answerKey": "D"
+      },
+      {
+        "no": 18,
+        "text": "Masuknya Islam ke Indonesia dipermudah oleh kegiatan….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Politik"
+          },
+          {
+            "key": "B",
+            "text": "Perdagangan"
+          },
+          {
+            "key": "C",
+            "text": "Perang"
+          },
+          {
+            "key": "D",
+            "text": "Penjajahan"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 19,
+        "text": "Tokoh penting dari Kesultanan Demak adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Sultan Malik As-Saleh"
+          },
+          {
+            "key": "B",
+            "text": "Raden Patah"
+          },
+          {
+            "key": "C",
+            "text": "Sultan Iskandar Muda"
+          },
+          {
+            "key": "D",
+            "text": "Sultan Agung"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 20,
+        "text": "Penulisan sejarah secara ilmiah harus menggunakan….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Imajinasi"
+          },
+          {
+            "key": "B",
+            "text": "Cerita rakyat"
+          },
+          {
+            "key": "C",
+            "text": "Sumber sejarah"
+          },
+          {
+            "key": "D",
+            "text": "Ramalan"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 21,
+        "text": "Ketika seseorang belajar norma dan nilai masyarakat, proses itu disebut….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Interaksi sosial"
+          },
+          {
+            "key": "B",
+            "text": "Asimilasi"
+          },
+          {
+            "key": "C",
+            "text": "Sosialisasi"
+          },
+          {
+            "key": "D",
+            "text": "Akulturasi"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 22,
+        "text": "Contoh interaksi sosial adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Duduk sendiri"
+          },
+          {
+            "key": "B",
+            "text": "Membaca buku"
+          },
+          {
+            "key": "C",
+            "text": "Bertukar informasi"
+          },
+          {
+            "key": "D",
+            "text": "Tidur di rumah"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 23,
+        "text": "Norma yang memiliki sanksi paling tegas adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Adat"
+          },
+          {
+            "key": "B",
+            "text": "Mores"
+          },
+          {
+            "key": "C",
+            "text": "Folkways"
+          },
+          {
+            "key": "D",
+            "text": "Hukum"
+          }
+        ],
+        "answerKey": "D"
+      },
+      {
+        "no": 24,
+        "text": "Proses masuknya budaya asing tanpa menghilangkan budaya asli disebut….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Asimilasi"
+          },
+          {
+            "key": "B",
+            "text": "Akulturasi"
+          },
+          {
+            "key": "C",
+            "text": "Difusi"
+          },
+          {
+            "key": "D",
+            "text": "Integrasi"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 25,
+        "text": "Penyebab konflik sosial adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Perbedaan pendapat"
+          },
+          {
+            "key": "B",
+            "text": "Kerjasama"
+          },
+          {
+            "key": "C",
+            "text": "Integrasi"
+          },
+          {
+            "key": "D",
+            "text": "Toleransi"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 26,
+        "text": "Bentuk kerja sama antara dua kelompok disebut….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Koalisi"
+          },
+          {
+            "key": "B",
+            "text": "Akomodasi"
+          },
+          {
+            "key": "C",
+            "text": "Kompetisi"
+          },
+          {
+            "key": "D",
+            "text": "Asimilasi"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 27,
+        "text": "Contoh mobilitas sosial vertikal naik adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Pindah rumah"
+          },
+          {
+            "key": "B",
+            "text": "Naik jabatan"
+          },
+          {
+            "key": "C",
+            "text": "Mutasi"
+          },
+          {
+            "key": "D",
+            "text": "Turun pangkat"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 28,
+        "text": "Masyarakat pedesaan biasanya memiliki ciri….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Mobilitas tinggi"
+          },
+          {
+            "key": "B",
+            "text": "Hubungan sosial renggang"
+          },
+          {
+            "key": "C",
+            "text": "Solidaritas kuat"
+          },
+          {
+            "key": "D",
+            "text": "Individualisme kuat"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 29,
+        "text": "Contoh nilai sosial adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Menjaga kebersihan"
+          },
+          {
+            "key": "B",
+            "text": "Bermain bola"
+          },
+          {
+            "key": "C",
+            "text": "Mengerjakan PR"
+          },
+          {
+            "key": "D",
+            "text": "Berbelanja"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 30,
+        "text": "Perilaku yang bertentangan dengan norma disebut….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Konsensus"
+          },
+          {
+            "key": "B",
+            "text": "Deviasi"
+          },
+          {
+            "key": "C",
+            "text": "Integrasi"
+          },
+          {
+            "key": "D",
+            "text": "Kooperasi"
+          }
+        ],
+        "answerKey": "B"
+      }
+    ]
+  },
+  {
+    "id": "exam-ips-viii",
+    "code": "ASAS-IPS-VIII",
+    "title": "Asesmen Sumatif Akhir Semester — IPS Kelas VIII",
+    "subject": "Ilmu Pengetahuan Sosial (IPS)",
+    "classLevel": "VIII",
+    "scheduleText": "Sabtu, 28 November 2026 • Jam Ke-1 (07.30 – 09.30 WIB)",
+    "dayOrder": 6,
+    "dayLabel": "Hari Ke-6 • Sabtu, 28 Nov 2026",
+    "sessionOrder": 1,
+    "durationMin": 90,
+    "status": "published",
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "questions": [
+      {
+        "no": 1,
+        "text": "Interaksi antarnegara dapat terjadi karena adanya….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Perbedaan mata uang"
+          },
+          {
+            "key": "B",
+            "text": "Kesamaan budaya"
+          },
+          {
+            "key": "C",
+            "text": "Perbedaan kebutuhan dan sumber daya"
+          },
+          {
+            "key": "D",
+            "text": "Persaingan penduduk"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 2,
+        "text": "Bentuk interaksi antarnegara dalam bidang ekonomi adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Pertukaran pelajar"
+          },
+          {
+            "key": "B",
+            "text": "Kerjasama militer"
+          },
+          {
+            "key": "C",
+            "text": "Perdagangan internasional"
+          },
+          {
+            "key": "D",
+            "text": "Perjanjian batas wilayah"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 3,
+        "text": "Penyebab utama terjadinya perdagangan internasional adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Semakin sedikit barang"
+          },
+          {
+            "key": "B",
+            "text": "Kebutuhan negara berbeda-beda"
+          },
+          {
+            "key": "C",
+            "text": "Negara ingin bersaing"
+          },
+          {
+            "key": "D",
+            "text": "Semua negara sama kebutuhannya"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 4,
+        "text": "Ekspor adalah kegiatan….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Menjual barang dari luar negeri"
+          },
+          {
+            "key": "B",
+            "text": "Membeli barang dari luar negeri"
+          },
+          {
+            "key": "C",
+            "text": "Menjual barang ke luar negeri"
+          },
+          {
+            "key": "D",
+            "text": "Menyimpan barang di dalam negeri"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 5,
+        "text": "Impor dilakukan jika….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Barang di luar negeri mahal"
+          },
+          {
+            "key": "B",
+            "text": "Barang dibutuhkan tetapi tidak ada di dalam negeri"
+          },
+          {
+            "key": "C",
+            "text": "Produksi nasional berlimpah"
+          },
+          {
+            "key": "D",
+            "text": "Negara ingin menghemat devisa"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 6,
+        "text": "Contoh barang ekspor Indonesia adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Pesawat udara"
+          },
+          {
+            "key": "B",
+            "text": "Padi"
+          },
+          {
+            "key": "C",
+            "text": "Kelapa sawit"
+          },
+          {
+            "key": "D",
+            "text": "Kapal selam"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 7,
+        "text": "Perjanjian kerja sama dua negara disebut….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Multilateral"
+          },
+          {
+            "key": "B",
+            "text": "Bilateral"
+          },
+          {
+            "key": "C",
+            "text": "Regional"
+          },
+          {
+            "key": "D",
+            "text": "Universal"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 8,
+        "text": "Kerjasama ekonomi yang melibatkan banyak negara disebut kerja sama….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Internasional"
+          },
+          {
+            "key": "B",
+            "text": "Regional"
+          },
+          {
+            "key": "C",
+            "text": "Nasional"
+          },
+          {
+            "key": "D",
+            "text": "Domestik"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 9,
+        "text": "Bantuan yang diberikan suatu negara kepada negara lain disebut….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Ekspor"
+          },
+          {
+            "key": "B",
+            "text": "Impor"
+          },
+          {
+            "key": "C",
+            "text": "Donasi"
+          },
+          {
+            "key": "D",
+            "text": "Hibah"
+          }
+        ],
+        "answerKey": "D"
+      },
+      {
+        "no": 10,
+        "text": "Interaksi negara dalam bidang pendidikan berbentuk….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Bantuan bahan pangan"
+          },
+          {
+            "key": "B",
+            "text": "Pertukaran pelajar"
+          },
+          {
+            "key": "C",
+            "text": "Bantuan militer"
+          },
+          {
+            "key": "D",
+            "text": "Ekspor tekstil"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 11,
+        "text": "ASEAN didirikan pada tahun….",
+        "options": [
+          {
+            "key": "A",
+            "text": "1955"
+          },
+          {
+            "key": "B",
+            "text": "1967"
+          },
+          {
+            "key": "C",
+            "text": "1978"
+          },
+          {
+            "key": "D",
+            "text": "1990"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 12,
+        "text": "Negara pendiri ASEAN kecuali….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Indonesia"
+          },
+          {
+            "key": "B",
+            "text": "Laos"
+          },
+          {
+            "key": "C",
+            "text": "Thailand"
+          },
+          {
+            "key": "D",
+            "text": "Malaysia"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 13,
+        "text": "Markas besar ASEAN terletak di….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Jakarta"
+          },
+          {
+            "key": "B",
+            "text": "Bangkok"
+          },
+          {
+            "key": "C",
+            "text": "Manila"
+          },
+          {
+            "key": "D",
+            "text": "Kuala Lumpur"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 14,
+        "text": "Tujuan pembentukan ASEAN adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Menciptakan konflik negara"
+          },
+          {
+            "key": "B",
+            "text": "Memperluas penjajahan"
+          },
+          {
+            "key": "C",
+            "text": "Meningkatkan kesejahteraan bersama"
+          },
+          {
+            "key": "D",
+            "text": "Menghapus kerja sama"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 15,
+        "text": "Kerja sama ASEAN dalam bidang pendidikan adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Pameran dagang"
+          },
+          {
+            "key": "B",
+            "text": "Program beasiswa"
+          },
+          {
+            "key": "C",
+            "text": "Latihan militer"
+          },
+          {
+            "key": "D",
+            "text": "Pengurangan tarif impor"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 16,
+        "text": "Produk unggulan Thailand dalam ASEAN adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tekstil"
+          },
+          {
+            "key": "B",
+            "text": "Beras"
+          },
+          {
+            "key": "C",
+            "text": "Timah"
+          },
+          {
+            "key": "D",
+            "text": "Karet"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 17,
+        "text": "Negara anggota ASEAN yang tidak memiliki laut adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Singapura"
+          },
+          {
+            "key": "B",
+            "text": "Laos"
+          },
+          {
+            "key": "C",
+            "text": "Kamboja"
+          },
+          {
+            "key": "D",
+            "text": "Myanmar"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 18,
+        "text": "AFTA merupakan kerja sama ASEAN dalam bidang….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Militer"
+          },
+          {
+            "key": "B",
+            "text": "Ekonomi"
+          },
+          {
+            "key": "C",
+            "text": "Pendidikan"
+          },
+          {
+            "key": "D",
+            "text": "Politik"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 19,
+        "text": "Indonesia berperan sebagai “Poros Maritim Dunia” karena….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Negara kepulauan strategis"
+          },
+          {
+            "key": "B",
+            "text": "Penduduk paling sedikit"
+          },
+          {
+            "key": "C",
+            "text": "Tidak memiliki laut"
+          },
+          {
+            "key": "D",
+            "text": "Daerahnya tandus"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 20,
+        "text": "Arti semboyan ASEAN “One Vision, One Identity, One Community” adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Negara bersaing bebas"
+          },
+          {
+            "key": "B",
+            "text": "Negara bekerja sama untuk kesejahteraan"
+          },
+          {
+            "key": "C",
+            "text": "Negara menutup diri"
+          },
+          {
+            "key": "D",
+            "text": "Negara bebas berkonflik"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 21,
+        "text": "Tujuan utama imperialisme kuno adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Penyebaran agama"
+          },
+          {
+            "key": "B",
+            "text": "Mencari kekayaan dan rempah-rempah"
+          },
+          {
+            "key": "C",
+            "text": "Menyatukan dunia"
+          },
+          {
+            "key": "D",
+            "text": "Mengurangi perdagangan"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 22,
+        "text": "Politik yang memecah belah bangsa Indonesia disebut….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Devide et impera"
+          },
+          {
+            "key": "B",
+            "text": "Benteng"
+          },
+          {
+            "key": "C",
+            "text": "Etis"
+          },
+          {
+            "key": "D",
+            "text": "Agraria"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 23,
+        "text": "Kedatangan bangsa Eropa ke Indonesia dipicu oleh….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Kemiskinan di Eropa"
+          },
+          {
+            "key": "B",
+            "text": "Jatuhnya Konstantinopel"
+          },
+          {
+            "key": "C",
+            "text": "Banyaknya bencana alam"
+          },
+          {
+            "key": "D",
+            "text": "Kekurangan rempah-rempah di Asia"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 24,
+        "text": "VOC didirikan oleh bangsa….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Portugis"
+          },
+          {
+            "key": "B",
+            "text": "Belanda"
+          },
+          {
+            "key": "C",
+            "text": "Inggris"
+          },
+          {
+            "key": "D",
+            "text": "Spanyol"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 25,
+        "text": "Tugas utama VOC adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Membangun sekolah"
+          },
+          {
+            "key": "B",
+            "text": "Menguasai perdagangan rempah"
+          },
+          {
+            "key": "C",
+            "text": "Membantu petani"
+          },
+          {
+            "key": "D",
+            "text": "Mengembangkan pendidikan"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 26,
+        "text": "Tokoh yang memimpin Perang Diponegoro adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Pangeran Antasari"
+          },
+          {
+            "key": "B",
+            "text": "Diponegoro"
+          },
+          {
+            "key": "C",
+            "text": "Tuanku Imam Bonjol"
+          },
+          {
+            "key": "D",
+            "text": "Pattimura"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 27,
+        "text": "Sistem tanam paksa dikenal dengan istilah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Cultuurstelsel"
+          },
+          {
+            "key": "B",
+            "text": "Rodi"
+          },
+          {
+            "key": "C",
+            "text": "Etische Politiek"
+          },
+          {
+            "key": "D",
+            "text": "Labelling"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 28,
+        "text": "Penyebab utama penderitaan rakyat saat tanam paksa adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Bebas memilih tanaman"
+          },
+          {
+            "key": "B",
+            "text": "Tidak ada pajak"
+          },
+          {
+            "key": "C",
+            "text": "Kerja berat dan hasil tani dirampas"
+          },
+          {
+            "key": "D",
+            "text": "Perdagangan meningkat"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 29,
+        "text": "Politik etis berisi tiga program kecuali….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Migrasi"
+          },
+          {
+            "key": "B",
+            "text": "Edukasi"
+          },
+          {
+            "key": "C",
+            "text": "Irigasi"
+          },
+          {
+            "key": "D",
+            "text": "Militerisasi"
+          }
+        ],
+        "answerKey": "D"
+      },
+      {
+        "no": 30,
+        "text": "Tujuan kolonialisme adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Memajukan negara jajahan"
+          },
+          {
+            "key": "B",
+            "text": "Menguasai sumber daya"
+          },
+          {
+            "key": "C",
+            "text": "Membantu perdagangan"
+          },
+          {
+            "key": "D",
+            "text": "Memberi kemerdekaan"
+          }
+        ],
+        "answerKey": "B"
+      }
+    ]
+  },
+  {
+    "id": "exam-ips-ix",
+    "code": "ASAS-IPS-IX",
+    "title": "Asesmen Sumatif Akhir Semester — IPS Kelas IX",
+    "subject": "Ilmu Pengetahuan Sosial (IPS)",
+    "classLevel": "IX",
+    "scheduleText": "Sabtu, 28 November 2026 • Jam Ke-1 (07.30 – 09.30 WIB)",
+    "dayOrder": 6,
+    "dayLabel": "Hari Ke-6 • Sabtu, 28 Nov 2026",
+    "sessionOrder": 1,
+    "durationMin": 90,
+    "status": "published",
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "questions": [
+      {
+        "no": 1,
+        "text": "Globalisasi adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Penyempitan ruang gerak negara"
+          },
+          {
+            "key": "B",
+            "text": "Hilangnya hubungan antarnegara"
+          },
+          {
+            "key": "C",
+            "text": "Mendunianya informasi, teknologi, dan hubungan antarnegara"
+          },
+          {
+            "key": "D",
+            "text": "Penutupan diri dari negara lain"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 2,
+        "text": "Faktor utama pendorong globalisasi adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Pendidikan rendah"
+          },
+          {
+            "key": "B",
+            "text": "Kemajuan teknologi transportasi dan komunikasi"
+          },
+          {
+            "key": "C",
+            "text": "Perang antarnegara"
+          },
+          {
+            "key": "D",
+            "text": "Ketergantungan pada impor"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 3,
+        "text": "Dampak positif globalisasi dalam bidang ekonomi adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Produk lokal tidak laku"
+          },
+          {
+            "key": "B",
+            "text": "Kompetisi tidak sehat"
+          },
+          {
+            "key": "C",
+            "text": "Investasi asing meningkat"
+          },
+          {
+            "key": "D",
+            "text": "Perdagangan macet"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 4,
+        "text": "Salah satu dampak negatif globalisasi pada budaya adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Semakin cinta produk lokal"
+          },
+          {
+            "key": "B",
+            "text": "Masuknya budaya asing yang buruk"
+          },
+          {
+            "key": "C",
+            "text": "Melestarikan budaya bangsa"
+          },
+          {
+            "key": "D",
+            "text": "Hidup lebih hemat"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 5,
+        "text": "Contoh kerjasama internasional di bidang pendidikan adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Ekspor hasil tambang"
+          },
+          {
+            "key": "B",
+            "text": "Impor barang elektronik"
+          },
+          {
+            "key": "C",
+            "text": "Pertukaran pelajar"
+          },
+          {
+            "key": "D",
+            "text": "Kerja sama militer"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 6,
+        "text": "Lembaga internasional yang menangani masalah perdamaian dunia adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "ASEAN"
+          },
+          {
+            "key": "B",
+            "text": "PBB"
+          },
+          {
+            "key": "C",
+            "text": "WTO"
+          },
+          {
+            "key": "D",
+            "text": "IMF"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 7,
+        "text": "WTO bergerak di bidang….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Perdamaian dunia"
+          },
+          {
+            "key": "B",
+            "text": "Perdagangan internasional"
+          },
+          {
+            "key": "C",
+            "text": "Keuangan pendidikan"
+          },
+          {
+            "key": "D",
+            "text": "Olahraga"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 8,
+        "text": "Kerja sama dua negara disebut kerja sama….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Regional"
+          },
+          {
+            "key": "B",
+            "text": "Universal"
+          },
+          {
+            "key": "C",
+            "text": "Bilateral"
+          },
+          {
+            "key": "D",
+            "text": "Multilateral"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 9,
+        "text": "ASEAN dibentuk pada tanggal….",
+        "options": [
+          {
+            "key": "A",
+            "text": "17 Agustus 1945"
+          },
+          {
+            "key": "B",
+            "text": "10 November 1947"
+          },
+          {
+            "key": "C",
+            "text": "8 Agustus 1967"
+          },
+          {
+            "key": "D",
+            "text": "5 Oktober 1965"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 10,
+        "text": "Indonesia termasuk negara pendiri ASEAN bersama….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Laos"
+          },
+          {
+            "key": "B",
+            "text": "Brunei"
+          },
+          {
+            "key": "C",
+            "text": "Myanmar"
+          },
+          {
+            "key": "D",
+            "text": "Thailand"
+          }
+        ],
+        "answerKey": "D"
+      },
+      {
+        "no": 11,
+        "text": "Perdagangan internasional terjadi karena….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Negara sama kebutuhan"
+          },
+          {
+            "key": "B",
+            "text": "Semua negara punya sumber daya sama"
+          },
+          {
+            "key": "C",
+            "text": "Perbedaan sumber daya dan kemampuan produksi"
+          },
+          {
+            "key": "D",
+            "text": "Negara tidak membutuhkan barang"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 12,
+        "text": "Ekspor adalah kegiatan….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Membeli barang dari luar negeri"
+          },
+          {
+            "key": "B",
+            "text": "Menjual barang ke luar negeri"
+          },
+          {
+            "key": "C",
+            "text": "Menimbun barang di dalam negeri"
+          },
+          {
+            "key": "D",
+            "text": "Mengirim barang antarprovinsi"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 13,
+        "text": "Impor artinya….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Menjual ke luar negeri"
+          },
+          {
+            "key": "B",
+            "text": "Membuang barang sisa produksi"
+          },
+          {
+            "key": "C",
+            "text": "Membeli barang dari luar negeri"
+          },
+          {
+            "key": "D",
+            "text": "Menimbun barang"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 14,
+        "text": "Berikut contoh barang ekspor Indonesia adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Telepon genggam"
+          },
+          {
+            "key": "B",
+            "text": "Mobil mewah"
+          },
+          {
+            "key": "C",
+            "text": "Kelapa sawit"
+          },
+          {
+            "key": "D",
+            "text": "Pesawat jet"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 15,
+        "text": "Tujuan perdagangan internasional adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Membatasi perdagangan"
+          },
+          {
+            "key": "B",
+            "text": "Mengurangi hubungan negara"
+          },
+          {
+            "key": "C",
+            "text": "Memenuhi kebutuhan yang tidak bisa diproduksi sendiri"
+          },
+          {
+            "key": "D",
+            "text": "Mengurangi devisa"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 16,
+        "text": "Devisa adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Uang yang dipakai di pasar lokal"
+          },
+          {
+            "key": "B",
+            "text": "Cadangan beras negara"
+          },
+          {
+            "key": "C",
+            "text": "Alat pembayaran luar negeri"
+          },
+          {
+            "key": "D",
+            "text": "Pajak perdagangan"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 17,
+        "text": "Impor yang terlalu besar dapat menyebabkan….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Devisa meningkat"
+          },
+          {
+            "key": "B",
+            "text": "Mata uang menguat"
+          },
+          {
+            "key": "C",
+            "text": "Industri lokal tertekan"
+          },
+          {
+            "key": "D",
+            "text": "Produk lokal berkembang"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 18,
+        "text": "Hambatan perdagangan internasional disebut….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tarif"
+          },
+          {
+            "key": "B",
+            "text": "Kredit"
+          },
+          {
+            "key": "C",
+            "text": "Produksi"
+          },
+          {
+            "key": "D",
+            "text": "Pendapatan"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 19,
+        "text": "Negara yang mengekspor hasil industri maju disebut negara….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Berkembang"
+          },
+          {
+            "key": "B",
+            "text": "Terbelakang"
+          },
+          {
+            "key": "C",
+            "text": "Industri"
+          },
+          {
+            "key": "D",
+            "text": "Agraris"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 20,
+        "text": "Contoh kerja sama internasional Indonesia adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Membeli barang dari tetangga"
+          },
+          {
+            "key": "B",
+            "text": "Gotong royong"
+          },
+          {
+            "key": "C",
+            "text": "Ekspor gas ke Jepang"
+          },
+          {
+            "key": "D",
+            "text": "Kerja bakti"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 21,
+        "text": "Sensus penduduk dilakukan setiap….",
+        "options": [
+          {
+            "key": "A",
+            "text": "3 tahun"
+          },
+          {
+            "key": "B",
+            "text": "5 tahun"
+          },
+          {
+            "key": "C",
+            "text": "10 tahun"
+          },
+          {
+            "key": "D",
+            "text": "15 tahun"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 22,
+        "text": "Kepadatan penduduk adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Banyaknya kelahiran"
+          },
+          {
+            "key": "B",
+            "text": "Banyaknya penduduk per km²"
+          },
+          {
+            "key": "C",
+            "text": "Banyaknya pendatang"
+          },
+          {
+            "key": "D",
+            "text": "Pertumbuhan industri"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 23,
+        "text": "Urbanisasi adalah perpindahan penduduk dari….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Kota ke desa"
+          },
+          {
+            "key": "B",
+            "text": "Desa ke kota"
+          },
+          {
+            "key": "C",
+            "text": "Kota ke luar negeri"
+          },
+          {
+            "key": "D",
+            "text": "Luar negeri ke desa"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 24,
+        "text": "Faktor pendorong urbanisasi adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Fasilitas desa lengkap"
+          },
+          {
+            "key": "B",
+            "text": "Lapangan kerja di desa sedikit"
+          },
+          {
+            "key": "C",
+            "text": "Pendapatan kota rendah"
+          },
+          {
+            "key": "D",
+            "text": "Pendidikan desa tinggi"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 25,
+        "text": "Masalah yang timbul akibat urbanisasi berlebihan adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Kota semakin sepi"
+          },
+          {
+            "key": "B",
+            "text": "Lahan pertanian meningkat"
+          },
+          {
+            "key": "C",
+            "text": "Munculnya pemukiman kumuh"
+          },
+          {
+            "key": "D",
+            "text": "Desa semakin maju"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 26,
+        "text": "Piramida penduduk muda menunjukkan….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Penduduk tua dominan"
+          },
+          {
+            "key": "B",
+            "text": "Angka kelahiran tinggi"
+          },
+          {
+            "key": "C",
+            "text": "Angka kelahiran rendah"
+          },
+          {
+            "key": "D",
+            "text": "Angka kematian tinggi"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 27,
+        "text": "Piramida penduduk stasioner menunjukkan….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Laju pertumbuhan tinggi"
+          },
+          {
+            "key": "B",
+            "text": "Pertumbuhan penduduk rendah"
+          },
+          {
+            "key": "C",
+            "text": "Jumlah anak sangat besar"
+          },
+          {
+            "key": "D",
+            "text": "Jumlah penduduk tua lebih banyak"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 28,
+        "text": "Transmigrasi adalah perpindahan penduduk dari….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Desa ke kota"
+          },
+          {
+            "key": "B",
+            "text": "Pulau padat ke pulau jarang penduduk"
+          },
+          {
+            "key": "C",
+            "text": "Kota ke luar negeri"
+          },
+          {
+            "key": "D",
+            "text": "Negara ke negara"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 29,
+        "text": "Bonus demografi adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Penduduk tua mendominasi"
+          },
+          {
+            "key": "B",
+            "text": "Penduduk produktif lebih banyak dari nonproduktif"
+          },
+          {
+            "key": "C",
+            "text": "Laju kelahiran menurun"
+          },
+          {
+            "key": "D",
+            "text": "Banyak pengangguran"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 30,
+        "text": "Dampak positif bonus demografi adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Berkurangnya tenaga kerja"
+          },
+          {
+            "key": "B",
+            "text": "Produktivitas meningkat"
+          },
+          {
+            "key": "C",
+            "text": "Tingkat kemiskinan naik"
+          },
+          {
+            "key": "D",
+            "text": "Pendidikan menurun"
+          }
+        ],
+        "answerKey": "B"
+      }
+    ]
+  },
+  {
+    "id": "exam-pjok-vii",
+    "code": "ASAS-PJOK-VII",
+    "title": "Asesmen Sumatif Akhir Semester — PJOK Kelas VII",
+    "subject": "PJOK",
+    "classLevel": "VII",
+    "scheduleText": "Sabtu, 28 November 2026 • Jam Ke-2 (10.00 – 11.30 WIB)",
+    "dayOrder": 6,
+    "dayLabel": "Hari Ke-6 • Sabtu, 28 Nov 2026",
+    "sessionOrder": 2,
+    "durationMin": 90,
+    "status": "published",
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "questions": [
+      {
+        "no": 1,
+        "text": "Start yang digunakan untuk perlombaan lari jarak pendek adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Start jongkok"
+          },
+          {
+            "key": "B",
+            "text": "Start berdiri"
+          },
+          {
+            "key": "C",
+            "text": "Start melayang"
+          },
+          {
+            "key": "D",
+            "text": "Start bebas"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 2,
+        "text": "Pada perlombaan lari jarak pendek, pelari boleh berlari pada saat….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Aba-aba atlet “Bersedia Siap”"
+          },
+          {
+            "key": "B",
+            "text": "Aba-aba “Siap”"
+          },
+          {
+            "key": "C",
+            "text": "Aba-aba “Bersedia”"
+          },
+          {
+            "key": "D",
+            "text": "Aba-aba “Ya” / bunyi pistol start"
+          }
+        ],
+        "answerKey": "D"
+      },
+      {
+        "no": 3,
+        "text": "Gerakan seorang pelari jarak pendek saat memasuki garis finish adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Melompat ke depan"
+          },
+          {
+            "key": "B",
+            "text": "Menengok lawannya ke belakang"
+          },
+          {
+            "key": "C",
+            "text": "Kecepatan lari diperlambat"
+          },
+          {
+            "key": "D",
+            "text": "Lari secepat-cepatnya"
+          }
+        ],
+        "answerKey": "D"
+      },
+      {
+        "no": 4,
+        "text": "Seorang pelari dinyatakan sebagai pemenang apabila….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Melakukan start dengan baik"
+          },
+          {
+            "key": "B",
+            "text": "Berlari dengan cepat"
+          },
+          {
+            "key": "C",
+            "text": "Sikap yang baik"
+          },
+          {
+            "key": "D",
+            "text": "Memasuki garis finish pertama"
+          }
+        ],
+        "answerKey": "D"
+      },
+      {
+        "no": 5,
+        "text": "Seorang atlet lari jarak pendek disebut juga dengan….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Starter"
+          },
+          {
+            "key": "B",
+            "text": "Pelari"
+          },
+          {
+            "key": "C",
+            "text": "Sprinter"
+          },
+          {
+            "key": "D",
+            "text": "Finisher"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 6,
+        "text": "Dalam lompat jauh, teknik yang digunakan untuk mendapatkan kecepatan saat melompat adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Teknik awalan"
+          },
+          {
+            "key": "B",
+            "text": "Teknik tumpuan"
+          },
+          {
+            "key": "C",
+            "text": "Teknik sikap di udara"
+          },
+          {
+            "key": "D",
+            "text": "Teknik mendarat"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 7,
+        "text": "Nomor lari 5.000 m dan 10.000 m termasuk lari….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Jarak menengah"
+          },
+          {
+            "key": "B",
+            "text": "Marathon"
+          },
+          {
+            "key": "C",
+            "text": "Jarak jauh"
+          },
+          {
+            "key": "D",
+            "text": "Jarak pendek"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 8,
+        "text": "Nilai-nilai yang terkandung di dalam pencak silat adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Seni budaya"
+          },
+          {
+            "key": "B",
+            "text": "Keilmuan"
+          },
+          {
+            "key": "C",
+            "text": "Pendekatan"
+          },
+          {
+            "key": "D",
+            "text": "Kesenangan"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 9,
+        "text": "Bagian tubuh yang dapat dijadikan sasaran dan bernilai dalam pertandingan silat adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tangan"
+          },
+          {
+            "key": "B",
+            "text": "Leher"
+          },
+          {
+            "key": "C",
+            "text": "Dada"
+          },
+          {
+            "key": "D",
+            "text": "Lengan"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 10,
+        "text": "Induk organisasi pencak silat nasional adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "IPSI"
+          },
+          {
+            "key": "B",
+            "text": "PSSI"
+          },
+          {
+            "key": "C",
+            "text": "PASI"
+          },
+          {
+            "key": "D",
+            "text": "IAAF"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 11,
+        "text": "Gerakan yang berfungsi untuk melatih kekuatan otot tangan dan dada adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Lompat jauh"
+          },
+          {
+            "key": "B",
+            "text": "Sit-up"
+          },
+          {
+            "key": "C",
+            "text": "Back-up"
+          },
+          {
+            "key": "D",
+            "text": "Push-up"
+          }
+        ],
+        "answerKey": "D"
+      },
+      {
+        "no": 12,
+        "text": "Gerakan “sit-up” merupakan latihan untuk meningkatkan kekuatan otot….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tangan"
+          },
+          {
+            "key": "B",
+            "text": "Perut"
+          },
+          {
+            "key": "C",
+            "text": "Punggung"
+          },
+          {
+            "key": "D",
+            "text": "Kaki"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 13,
+        "text": "Saat melakukan sit-up yang baik adalah bagian kaki….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Harus diluruskan"
+          },
+          {
+            "key": "B",
+            "text": "Harus ditekuk"
+          },
+          {
+            "key": "C",
+            "text": "Harus dibuka"
+          },
+          {
+            "key": "D",
+            "text": "Diangkat tinggi"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 14,
+        "text": "Latihan sikap lilin dilakukan dari posisi….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Berlari"
+          },
+          {
+            "key": "B",
+            "text": "Berdiri"
+          },
+          {
+            "key": "C",
+            "text": "Duduk"
+          },
+          {
+            "key": "D",
+            "text": "Terlentang"
+          }
+        ],
+        "answerKey": "D"
+      },
+      {
+        "no": 15,
+        "text": "Renang gaya bebas sering disebut dengan istilah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Back crawl"
+          },
+          {
+            "key": "B",
+            "text": "Breaststroke"
+          },
+          {
+            "key": "C",
+            "text": "Crawl"
+          },
+          {
+            "key": "D",
+            "text": "Dolphin"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 16,
+        "text": "Dalam permainan sepak bola agar tendangan bola yang dihasilkan melambung maka perkenaan kaki pada bola harus di bagian….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Bawah bola"
+          },
+          {
+            "key": "B",
+            "text": "Samping bola"
+          },
+          {
+            "key": "C",
+            "text": "Atas bola"
+          },
+          {
+            "key": "D",
+            "text": "Tengah bola"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 17,
+        "text": "Bagian yang digunakan untuk menghentikan bola yang menyusur tanah dalam permainan sepak bola adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Kaki bagian luar"
+          },
+          {
+            "key": "B",
+            "text": "Kaki bagian dalam"
+          },
+          {
+            "key": "C",
+            "text": "Lutut"
+          },
+          {
+            "key": "D",
+            "text": "Paha"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 18,
+        "text": "Tendangan bebas dalam permainan sepak bola disebut….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Free kick"
+          },
+          {
+            "key": "B",
+            "text": "Corner kick"
+          },
+          {
+            "key": "C",
+            "text": "Throw in"
+          },
+          {
+            "key": "D",
+            "text": "Outside"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 19,
+        "text": "Apabila seorang penjaga/pemain bertahan melakukan pelanggaran di dalam daerah gawang maka akan diadakan hukuman tendangan….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Sudut"
+          },
+          {
+            "key": "B",
+            "text": "Gawang"
+          },
+          {
+            "key": "C",
+            "text": "Penalti"
+          },
+          {
+            "key": "D",
+            "text": "Bebas"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 20,
+        "text": "Satu regu dalam permainan bola voli berjumlah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "6 orang"
+          },
+          {
+            "key": "B",
+            "text": "5 orang"
+          },
+          {
+            "key": "C",
+            "text": "4 orang"
+          },
+          {
+            "key": "D",
+            "text": "12 orang"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 21,
+        "text": "Pukulan pertama kali untuk memulai permainan dalam bola voli disebut….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Passing"
+          },
+          {
+            "key": "B",
+            "text": "Servis"
+          },
+          {
+            "key": "C",
+            "text": "Smash"
+          },
+          {
+            "key": "D",
+            "text": "Spike"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 22,
+        "text": "Smash dalam permainan bola voli berarti….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Mengumpan bola"
+          },
+          {
+            "key": "B",
+            "text": "Pukulan keras"
+          },
+          {
+            "key": "C",
+            "text": "Sajian pertama"
+          },
+          {
+            "key": "D",
+            "text": "Membendung lawan"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 23,
+        "text": "Dalam permainan bola voli, kita mengenal istilah blocking, yang artinya….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Pukulan keras"
+          },
+          {
+            "key": "B",
+            "text": "Pergeseran tempat"
+          },
+          {
+            "key": "C",
+            "text": "Membendung serangan lawan"
+          },
+          {
+            "key": "D",
+            "text": "Pergeseran pemain"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 24,
+        "text": "Latihan kekuatan untuk tujuan melatih kekuatan otot kaki adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Back Up"
+          },
+          {
+            "key": "B",
+            "text": "Squat Jump"
+          },
+          {
+            "key": "C",
+            "text": "Sit-up"
+          },
+          {
+            "key": "D",
+            "text": "Push up"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 25,
+        "text": "Latihan kekuatan untuk tujuan menguatkan otot punggung adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Push Up"
+          },
+          {
+            "key": "B",
+            "text": "Back Up"
+          },
+          {
+            "key": "C",
+            "text": "Squat jump"
+          },
+          {
+            "key": "D",
+            "text": "Sit-up"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 26,
+        "text": "Operan dalam permainan bola basket disebut….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Pivot"
+          },
+          {
+            "key": "B",
+            "text": "Lay-up shot"
+          },
+          {
+            "key": "C",
+            "text": "Dribble"
+          },
+          {
+            "key": "D",
+            "text": "Passing"
+          }
+        ],
+        "answerKey": "D"
+      },
+      {
+        "no": 27,
+        "text": "Memasukkan bola ke ring basket sambil berlari melangkah lebar dan melompat disebut….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Pivot"
+          },
+          {
+            "key": "B",
+            "text": "Dribble"
+          },
+          {
+            "key": "C",
+            "text": "Lay-up shoot"
+          },
+          {
+            "key": "D",
+            "text": "Passing"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 28,
+        "text": "Menggiring bola dalam permainan bola basket disebut….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Pivot"
+          },
+          {
+            "key": "B",
+            "text": "Lay-up shot"
+          },
+          {
+            "key": "C",
+            "text": "Dribble"
+          },
+          {
+            "key": "D",
+            "text": "Passing"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 29,
+        "text": "Alat pemukul bola (kok) dalam permainan bulu tangkis disebut….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Bet"
+          },
+          {
+            "key": "B",
+            "text": "Raket"
+          },
+          {
+            "key": "C",
+            "text": "Stik"
+          },
+          {
+            "key": "D",
+            "text": "Glove"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 30,
+        "text": "Latihan senam kayang bertujuan untuk melatih….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Kelenturan"
+          },
+          {
+            "key": "B",
+            "text": "Kekuatan"
+          },
+          {
+            "key": "C",
+            "text": "Endurance"
+          },
+          {
+            "key": "D",
+            "text": "Kelincahan"
+          }
+        ],
+        "answerKey": "A"
+      }
+    ]
+  },
+  {
+    "id": "exam-pjok-viii",
+    "code": "ASAS-PJOK-VIII",
+    "title": "Asesmen Sumatif Akhir Semester — PJOK Kelas VIII",
+    "subject": "PJOK",
+    "classLevel": "VIII",
+    "scheduleText": "Sabtu, 28 November 2026 • Jam Ke-2 (10.00 – 11.30 WIB)",
+    "dayOrder": 6,
+    "dayLabel": "Hari Ke-6 • Sabtu, 28 Nov 2026",
+    "sessionOrder": 2,
+    "durationMin": 90,
+    "status": "published",
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "questions": [
+      {
+        "no": 1,
+        "text": "Kaki yang digunakan untuk menahan bola diputar ke luar, sehingga kaki bagian dalam menghadap ke arah datangnya bola. Teknik ini merupakan cara menahan bola menggunakan….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Kura-kura kaki"
+          },
+          {
+            "key": "B",
+            "text": "Punggung kaki"
+          },
+          {
+            "key": "C",
+            "text": "Kaki bagian dalam"
+          },
+          {
+            "key": "D",
+            "text": "Kaki bagian luar"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 2,
+        "text": "Badan bagian atas dicondongkan ke belakang dengan dada ditarik ke depan. Teknik ini merupakan cara menahan bola menggunakan….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Paha"
+          },
+          {
+            "key": "B",
+            "text": "Dada"
+          },
+          {
+            "key": "C",
+            "text": "Kepala"
+          },
+          {
+            "key": "D",
+            "text": "Kaki bagian luar"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 3,
+        "text": "Berikut ini adalah gerakan menghentikan bola dalam permainan sepak bola, kecuali….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Menghentikan bola dengan telapak kaki"
+          },
+          {
+            "key": "B",
+            "text": "Menghentikan bola dengan dada"
+          },
+          {
+            "key": "C",
+            "text": "Menghentikan bola dengan paha"
+          },
+          {
+            "key": "D",
+            "text": "Menghentikan bola dengan tumit"
+          }
+        ],
+        "answerKey": "D"
+      },
+      {
+        "no": 4,
+        "text": "Permainan bola voli diciptakan pada tahun 1895 oleh orang berkebangsaan Amerika, yaitu….",
+        "options": [
+          {
+            "key": "A",
+            "text": "James A. Naismith"
+          },
+          {
+            "key": "B",
+            "text": "William G. Morgan"
+          },
+          {
+            "key": "C",
+            "text": "George Handcock"
+          },
+          {
+            "key": "D",
+            "text": "W.C. Wingfield"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 5,
+        "text": "Dalam permainan bola voli, gerakan kedua kaki terbuka, lutut ditekuk, kedua lengan lurus dijulurkan ke depan bawah dan tangan satu sama lain dikaitkan atau berpegangan, ini merupakan gerakan….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Servis"
+          },
+          {
+            "key": "B",
+            "text": "Smash"
+          },
+          {
+            "key": "C",
+            "text": "Passing bawah"
+          },
+          {
+            "key": "D",
+            "text": "Passing atas"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 6,
+        "context": "Perhatikan urutan servis di bawah ini!\n(1) Telapak tangan menghadap bola dan tangan ditegangkan atau tangan menggenggam untuk mendapat pantulan yang sempurna\n(2) Bola dipegang dengan salah satu tangan\n(3) Setelah bola melambung kira-kira setinggi pinggang, lengan diayunkan lurus ke depan untuk memukul bola\n(4) Berdiri di daerah servis dengan salah satu kaki lebih ke depan daripada kaki yang lain\n(5) Bola dilambungkan tidak terlalu tinggi, tangan yang lain ditarik ke bawah belakang",
+        "text": "Urutan yang sesuai untuk melakukan teknik dasar servis bawah bola voli adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "(4)-(5)-(2)-(3)-(1)"
+          },
+          {
+            "key": "B",
+            "text": "(4)-(2)-(5)-(1)-(3)"
+          },
+          {
+            "key": "C",
+            "text": "(4)-(5)-(2)-(1)-(3)"
+          },
+          {
+            "key": "D",
+            "text": "(4)-(2)-(5)-(3)-(1)"
+          }
+        ],
+        "answerKey": "D"
+      },
+      {
+        "no": 7,
+        "text": "Dalam suatu pertandingan bola basket, Dikri melakukan tembakan sebanyak 2x dari luar garis three points, 4x dalam garis three points (2 poin) dan 3x lemparan bebas (1 poin). Berapa poin yang didapatkannya?",
+        "options": [
+          {
+            "key": "A",
+            "text": "15 poin"
+          },
+          {
+            "key": "B",
+            "text": "16 poin"
+          },
+          {
+            "key": "C",
+            "text": "17 poin"
+          },
+          {
+            "key": "D",
+            "text": "18 poin"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 8,
+        "text": "Ukuran lapangan bola basket standar adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "9 x 15 meter"
+          },
+          {
+            "key": "B",
+            "text": "30 x 15 meter"
+          },
+          {
+            "key": "C",
+            "text": "28 x 15 meter"
+          },
+          {
+            "key": "D",
+            "text": "10 x 20 meter"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 9,
+        "text": "Operan ke teman seregu dengan cara operan melalui depan dada dalam permainan bola basket disebut….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chest Pass"
+          },
+          {
+            "key": "B",
+            "text": "Bounce Pass"
+          },
+          {
+            "key": "C",
+            "text": "Over Head Pass"
+          },
+          {
+            "key": "D",
+            "text": "Base Pass"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 10,
+        "text": "Yang tidak termasuk alat yang digunakan dalam permainan bola kasti adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Pemukul"
+          },
+          {
+            "key": "B",
+            "text": "Bola kasti"
+          },
+          {
+            "key": "C",
+            "text": "Tiang hinggap"
+          },
+          {
+            "key": "D",
+            "text": "Bola tenis"
+          }
+        ],
+        "answerKey": "D"
+      },
+      {
+        "no": 11,
+        "text": "Di bawah ini adalah gerakan dasar bermain kasti, kecuali….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Melempar bola"
+          },
+          {
+            "key": "B",
+            "text": "Shooting"
+          },
+          {
+            "key": "C",
+            "text": "Menangkap bola"
+          },
+          {
+            "key": "D",
+            "text": "Memukul bola"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 12,
+        "text": "Jenis lemparan yang digunakan untuk melempar bola ke arah pemukul dalam permainan kasti adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Lemparan melambung"
+          },
+          {
+            "key": "B",
+            "text": "Lemparan mendatar"
+          },
+          {
+            "key": "C",
+            "text": "Lemparan menyusur tanah"
+          },
+          {
+            "key": "D",
+            "text": "Lemparan samping"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 13,
+        "text": "Cara melakukan permainan bulu tangkis dengan tujuan menerbangkan shuttlecock pada awal permainan menuju bidang lapangan lawan disebut….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Jenis pukulan"
+          },
+          {
+            "key": "B",
+            "text": "Teknik pukulan"
+          },
+          {
+            "key": "C",
+            "text": "Pukulan servis"
+          },
+          {
+            "key": "D",
+            "text": "Variasi pukulan"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 14,
+        "text": "Pukulan dalam permainan bulu tangkis yang dilakukan dengan tujuan untuk menerbangkan shuttlecock setinggi mungkin mengarah jauh ke belakang garis lapangan dinamakan….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Pukulan servis"
+          },
+          {
+            "key": "B",
+            "text": "Pukulan drive"
+          },
+          {
+            "key": "C",
+            "text": "Pukulan dropshot"
+          },
+          {
+            "key": "D",
+            "text": "Pukulan lob"
+          }
+        ],
+        "answerKey": "D"
+      },
+      {
+        "no": 15,
+        "text": "Induk organisasi nasional permainan bulu tangkis adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "PBVSI"
+          },
+          {
+            "key": "B",
+            "text": "PBTSI"
+          },
+          {
+            "key": "C",
+            "text": "PSSI"
+          },
+          {
+            "key": "D",
+            "text": "PBSI"
+          }
+        ],
+        "answerKey": "D"
+      },
+      {
+        "no": 16,
+        "text": "Gerakan memukul bola dengan mendorong dan sikap bet terbuka dalam permainan tenis meja adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Push"
+          },
+          {
+            "key": "B",
+            "text": "Drive"
+          },
+          {
+            "key": "C",
+            "text": "Block"
+          },
+          {
+            "key": "D",
+            "text": "Stance"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 17,
+        "text": "Induk organisasi nasional permainan tenis meja adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "PTSI"
+          },
+          {
+            "key": "B",
+            "text": "PTMSI"
+          },
+          {
+            "key": "C",
+            "text": "ATMSI"
+          },
+          {
+            "key": "D",
+            "text": "FTMSI"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 18,
+        "text": "Ukuran panjang dan lebar meja pada permainan tenis meja adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "3,74 x 1,52 meter"
+          },
+          {
+            "key": "B",
+            "text": "4,74 x 1,52 meter"
+          },
+          {
+            "key": "C",
+            "text": "2,74 x 1,52 meter"
+          },
+          {
+            "key": "D",
+            "text": "2,74 x 2,52 meter"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 19,
+        "text": "Perbedaan antara jalan dengan lari terletak pada….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Cara kaki menapak"
+          },
+          {
+            "key": "B",
+            "text": "Kecondongan badan"
+          },
+          {
+            "key": "C",
+            "text": "Panjang langkah"
+          },
+          {
+            "key": "D",
+            "text": "Memasuki garis finish"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 20,
+        "text": "Start yang digunakan dalam lari jarak pendek adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Start melayang"
+          },
+          {
+            "key": "B",
+            "text": "Start jongkok"
+          },
+          {
+            "key": "C",
+            "text": "Start berdiri"
+          },
+          {
+            "key": "D",
+            "text": "Start berlari"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 21,
+        "text": "Yang termasuk nomor lari jarak pendek dalam cabang olahraga atletik adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "100 m, 200 m, 300 m"
+          },
+          {
+            "key": "B",
+            "text": "100 m, 200 m, 400 m"
+          },
+          {
+            "key": "C",
+            "text": "200 m, 400 m, 800 m"
+          },
+          {
+            "key": "D",
+            "text": "200 m, 400 m, 1600 m"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 22,
+        "text": "Gaya tolak peluru di mana awalan menyamping sudut lemparan dinamakan….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Gaya Ortodoks"
+          },
+          {
+            "key": "B",
+            "text": "Gaya O'Brien"
+          },
+          {
+            "key": "C",
+            "text": "Gaya Side arm"
+          },
+          {
+            "key": "D",
+            "text": "Gaya Butterfly"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 23,
+        "text": "Cara memegang peluru yang benar adalah peluru diletakkan pada….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Ibu jari dan kelingking"
+          },
+          {
+            "key": "B",
+            "text": "Pangkal jari-jari tangan"
+          },
+          {
+            "key": "C",
+            "text": "Telapak tangan"
+          },
+          {
+            "key": "D",
+            "text": "Ujung jari-jari tangan"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 24,
+        "text": "Gaya tolak peluru di mana awalan membelakangi sudut lemparan dinamakan….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Gaya Ortodoks"
+          },
+          {
+            "key": "B",
+            "text": "Gaya O'Brien"
+          },
+          {
+            "key": "C",
+            "text": "Gaya Glide"
+          },
+          {
+            "key": "D",
+            "text": "Gaya Butterfly"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 25,
+        "text": "Cara pembelaan dengan mengadakan kontak langsung terhadap serangan lawan dalam pencak silat dinamakan….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Serangan"
+          },
+          {
+            "key": "B",
+            "text": "Pembelaan"
+          },
+          {
+            "key": "C",
+            "text": "Tangkisan"
+          },
+          {
+            "key": "D",
+            "text": "Elakan"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 26,
+        "text": "Induk organisasi pencak silat di Indonesia ialah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "PPSI"
+          },
+          {
+            "key": "B",
+            "text": "IPSI"
+          },
+          {
+            "key": "C",
+            "text": "Tapak Suci"
+          },
+          {
+            "key": "D",
+            "text": "TTKKDH"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 27,
+        "text": "Gerakan menjatuhkan lawan yang dilakukan dengan menjepit kedua tungkai kaki pada sasaran leher, pinggang, atau tungkai lawan sehingga lawan terjatuh dalam pencak silat dinamakan….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tendangan"
+          },
+          {
+            "key": "B",
+            "text": "Bantingan"
+          },
+          {
+            "key": "C",
+            "text": "Guntingan"
+          },
+          {
+            "key": "D",
+            "text": "Pukulan"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 28,
+        "text": "Kemampuan tubuh melakukan penyesuaian terhadap pembebanan fisik yang diberikan kepadanya dari kerja yang dilakukan sehari-hari tanpa menimbulkan kelelahan yang berlebihan disebut….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Kebugaran jasmani"
+          },
+          {
+            "key": "B",
+            "text": "Ketahanan tubuh"
+          },
+          {
+            "key": "C",
+            "text": "Daya tahan tubuh"
+          },
+          {
+            "key": "D",
+            "text": "Kekuatan tubuh"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 29,
+        "text": "Kemampuan untuk melakukan perpindahan tempat dari satu tempat ke tempat yang lainnya dalam waktu yang sesingkat-singkatnya dinamakan….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Daya tahan"
+          },
+          {
+            "key": "B",
+            "text": "Kecepatan"
+          },
+          {
+            "key": "C",
+            "text": "Kelenturan"
+          },
+          {
+            "key": "D",
+            "text": "Kelincahan"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 30,
+        "text": "Kemampuan tubuh melakukan aktivitas secara berulang-ulang tanpa merasa letih dalam jangka waktu lama disebut….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Kebugaran jasmani"
+          },
+          {
+            "key": "B",
+            "text": "Stamina"
+          },
+          {
+            "key": "C",
+            "text": "Daya tahan"
+          },
+          {
+            "key": "D",
+            "text": "Kekuatan"
+          }
+        ],
+        "answerKey": "C"
+      }
+    ]
+  },
+  {
+    "id": "exam-pjok-ix",
+    "code": "ASAS-PJOK-IX",
+    "title": "Asesmen Sumatif Akhir Semester — PJOK Kelas IX",
+    "subject": "PJOK",
+    "classLevel": "IX",
+    "scheduleText": "Sabtu, 28 November 2026 • Jam Ke-2 (10.00 – 11.30 WIB)",
+    "dayOrder": 6,
+    "dayLabel": "Hari Ke-6 • Sabtu, 28 Nov 2026",
+    "sessionOrder": 2,
+    "durationMin": 90,
+    "status": "published",
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "questions": [
+      {
+        "no": 1,
+        "text": "Dalam sebuah pertandingan sepak bola, tugas dan tanggung jawab pemain sesuai dengan posisi masing-masing. Tugas pemain bertahan adalah menjaga daerah pertahanan agar tidak mudah ditembus lawan, tugas penjaga gawang adalah menjaga gawang agar tidak bisa dibobol oleh lawan, adapun membobol gawang lawan adalah tugas utama dari….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Pemain gelandang"
+          },
+          {
+            "key": "B",
+            "text": "Pemain tengah"
+          },
+          {
+            "key": "C",
+            "text": "Pemain penyerang"
+          },
+          {
+            "key": "D",
+            "text": "Pemain cadangan"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 2,
+        "context": "Berikut ini adalah daftar istilah dalam olahraga permainan:\n- Kick off – Throw in – Goal kick – Corner kick – Free kick – Off side – Passing – Pivot",
+        "text": "Manakah kelompok yang memuat istilah yang BUKAN berasal dari permainan sepak bola….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Kick off, throw in, goal kick"
+          },
+          {
+            "key": "B",
+            "text": "Corner kick, free kick, off side"
+          },
+          {
+            "key": "C",
+            "text": "Goal kick, free kick, passing"
+          },
+          {
+            "key": "D",
+            "text": "Off side, throw in, pivot"
+          }
+        ],
+        "answerKey": "D"
+      },
+      {
+        "no": 3,
+        "text": "Jika dalam suatu kejuaraan sepak bola dengan menggunakan sistem kompetisi, nilai yang diperoleh setiap tim jika berhasil mengalahkan tim lawan adalah 3 (tiga), dan tim yang kalah mendapatkan nilai 0 (nol), berapakah nilai yang diperoleh tim jika hasil pertandingan imbang (draw)….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Satu"
+          },
+          {
+            "key": "B",
+            "text": "Dua"
+          },
+          {
+            "key": "C",
+            "text": "Tiga"
+          },
+          {
+            "key": "D",
+            "text": "Empat"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 4,
+        "context": "Perhatikan daftar bola permainan bola besar berikut!\n(1) Bola Voli\n(2) Bola Basket\n(3) Bola Sepak (bercorak segi lima hitam-putih)\n(4) Bola Rugby / American Football",
+        "text": "Manakah nomor bola yang dipakai untuk olahraga permainan sepak bola….",
+        "options": [
+          {
+            "key": "A",
+            "text": "1"
+          },
+          {
+            "key": "B",
+            "text": "2"
+          },
+          {
+            "key": "C",
+            "text": "3"
+          },
+          {
+            "key": "D",
+            "text": "4"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 5,
+        "text": "Pemain penyerang berada lebih dekat ke garis gawang lawan dibanding pemain bertahan lawan saat bola akan dioper kepadanya adalah pengertian dari pelanggaran ..., di mana wasit akan menghentikan permainan kemudian memulai lagi dengan cara….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Out side, memulai lagi dengan free kick di tempat kejadian untuk tim bertahan"
+          },
+          {
+            "key": "B",
+            "text": "In side, memulai lagi dengan free kick di tempat kejadian untuk tim bertahan"
+          },
+          {
+            "key": "C",
+            "text": "On side, memulai lagi dengan free kick di tempat kejadian untuk tim bertahan"
+          },
+          {
+            "key": "D",
+            "text": "Off side, memulai kembali dengan free kick di tempat kejadian untuk tim bertahan"
+          }
+        ],
+        "answerKey": "D"
+      },
+      {
+        "no": 6,
+        "text": "Tugas seorang wasit 1 dalam sebuah pertandingan bola voli di antaranya yaitu memimpin pertandingan, menghentikan dan memulai kembali permainan. Adapun salah satu tugas seorang wasit 2 adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Memberi sinyal ke wasit 1 jika terjadi salah posisi pemain"
+          },
+          {
+            "key": "B",
+            "text": "Memberi sinyal ke wasit 1 jika terjadi bola keluar"
+          },
+          {
+            "key": "C",
+            "text": "Memberi sinyal ke wasit 1 jika terjadi bola masuk"
+          },
+          {
+            "key": "D",
+            "text": "Memberi sinyal ke wasit 1 jika terjadi keributan"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 7,
+        "text": "Permainan bola basket pertama kali diciptakan oleh Dr. James Naismith pada tahun 1891, sedangkan permainan bola voli pertama kali diciptakan oleh William George Morgan pada tahun 1895 di YMCA. Sebelum menjadi nama bola voli, apakah nama olahraga permainan ini pada awal diciptakan….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Softball"
+          },
+          {
+            "key": "B",
+            "text": "Mintonette"
+          },
+          {
+            "key": "C",
+            "text": "Baseball"
+          },
+          {
+            "key": "D",
+            "text": "Badminton"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 8,
+        "text": "Pemain yang bertugas untuk menerima bola pertama (bertahan) dalam permainan bola voli adalah libero, adapun yang mengatur penyerangan dan memberi umpan kepada pemain untuk melakukan smash adalah tugas dari pemain….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tosser / Set-upper"
+          },
+          {
+            "key": "B",
+            "text": "Blocker"
+          },
+          {
+            "key": "C",
+            "text": "Spiker"
+          },
+          {
+            "key": "D",
+            "text": "Server"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 9,
+        "text": "Dalam permainan bola basket, skor tertinggi saat memasukkan bola ke ring lawan adalah saat tembakannya dilakukan dari luar garis daerah pertahanan lawan (luar busur three point). Tembakan tersebut bernilai ... poin.",
+        "options": [
+          {
+            "key": "A",
+            "text": "1 poin"
+          },
+          {
+            "key": "B",
+            "text": "3 poin"
+          },
+          {
+            "key": "C",
+            "text": "2 poin"
+          },
+          {
+            "key": "D",
+            "text": "4 poin"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 10,
+        "text": "Jika dalam sebuah pertandingan bola basket seorang pemain penyerang berada di daerah bersyarat (keyhole) pertahanan lawan terlalu lama tanpa proses tembakan, maka akan dikenakan peraturan….",
+        "options": [
+          {
+            "key": "A",
+            "text": "1 detik"
+          },
+          {
+            "key": "B",
+            "text": "5 detik"
+          },
+          {
+            "key": "C",
+            "text": "3 detik"
+          },
+          {
+            "key": "D",
+            "text": "7 detik"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 11,
+        "text": "Di suatu pertandingan bola basket salah seorang pemain sedang melakukan dribbling yang tidak benar (double/travelling), maka wasit akan menghentikan permainan serta memulai lagi dengan cara….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tembakan bebas untuk tim lawan"
+          },
+          {
+            "key": "B",
+            "text": "Lemparan ke dalam diambil dari garis samping lapangan yang paling dekat oleh tim lawan"
+          },
+          {
+            "key": "C",
+            "text": "Tembakan bebas di tempat kejadian pelanggaran"
+          },
+          {
+            "key": "D",
+            "text": "Lemparan ke dalam oleh pemain yang melakukan pelanggaran"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 12,
+        "context": "Perhatikan tabel skor cabang olahraga berikut!\n• Tenis meja : Skor 11 poin (3 set kemenangan)\n• Bulu tangkis : Skor [ ?? ] (2 set kemenangan)\n• Bola voli : Skor 25 poin (3 set kemenangan)",
+        "text": "Berapakah skor standar tiap set pada permainan bulu tangkis….",
+        "options": [
+          {
+            "key": "A",
+            "text": "21 poin"
+          },
+          {
+            "key": "B",
+            "text": "22 poin"
+          },
+          {
+            "key": "C",
+            "text": "23 poin"
+          },
+          {
+            "key": "D",
+            "text": "24 poin"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 13,
+        "context": "Perhatikan daftar bola/alat permainan bola kecil berikut!\n(1) Bola Tenis Lapangan\n(2) Bola Kasti / Baseball\n(3) Kok (Shuttlecock)\n(4) Bola Tenis Meja (Pingpong)",
+        "text": "Manakah nomor bola/alat yang dipakai untuk permainan bulu tangkis….",
+        "options": [
+          {
+            "key": "A",
+            "text": "1"
+          },
+          {
+            "key": "B",
+            "text": "2"
+          },
+          {
+            "key": "C",
+            "text": "3"
+          },
+          {
+            "key": "D",
+            "text": "4"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 14,
+        "text": "Setiap cabang olahraga memiliki induk organisasi masing-masing. Adapun induk organisasi cabang olahraga bulu tangkis di Indonesia adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "PERBASI"
+          },
+          {
+            "key": "B",
+            "text": "PBVSI"
+          },
+          {
+            "key": "C",
+            "text": "PSSI"
+          },
+          {
+            "key": "D",
+            "text": "PBSI"
+          }
+        ],
+        "answerKey": "D"
+      },
+      {
+        "no": 15,
+        "context": "Perhatikan tabel partai pertandingan bulu tangkis berikut!\n1. Putra — Tunggal (Single)\n2. Putra — Ganda (Double)\n3. Putri — Tunggal (Single)\n4. Putri — Ganda (Double)\n5. [ ??? ] — Ganda (Double)",
+        "text": "Kategori yang tepat untuk melengkapi tanda [ ??? ] pada partai kelima bulu tangkis adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Putra"
+          },
+          {
+            "key": "B",
+            "text": "Putri"
+          },
+          {
+            "key": "C",
+            "text": "Campuran / Mix"
+          },
+          {
+            "key": "D",
+            "text": "Tunggal"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 16,
+        "text": "Tugas seorang pitcher (pelambung) adalah sebagai pelempar bola bagi pemukul, di mana bola yang dilempar idealnya paling tinggi sejajar dengan bahu dan paling rendah setinggi lutut pemukul. Adapun pelambung (pitcher) dalam olahraga softball dilakukan oleh….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Diri sendiri"
+          },
+          {
+            "key": "B",
+            "text": "Pemain satu tim"
+          },
+          {
+            "key": "C",
+            "text": "Pemain lawan"
+          },
+          {
+            "key": "D",
+            "text": "Wasit"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 17,
+        "context": "Daftar istilah olahraga:\nMenendang – memukul – pelambung – menangkap – pitcher – catcher – short stop – first baseman – second baseman – third baseman – melempar – mendorong – berguling – smash – blocking – sliding – lob – guling perut.",
+        "text": "Manakah yang seluruhnya merupakan istilah-istilah dalam olahraga softball….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Menangkap, memukul, mendorong"
+          },
+          {
+            "key": "B",
+            "text": "Melempar, menendang, berguling"
+          },
+          {
+            "key": "C",
+            "text": "Pitcher, catcher, memukul"
+          },
+          {
+            "key": "D",
+            "text": "First baseman, second baseman, smash"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 18,
+        "text": "Permainan sepak bola dan bola basket dibatasi oleh waktu bermain, sedangkan bola voli dan bulu tangkis dibatasi oleh poin. Jika dalam permainan softball satu tim melakukan giliran memukul (menyerang) satu kali serta bertahan (menjaga) satu kali, maka disebut satu….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Inning"
+          },
+          {
+            "key": "B",
+            "text": "Menyerang-bertahan"
+          },
+          {
+            "key": "C",
+            "text": "Strike"
+          },
+          {
+            "key": "D",
+            "text": "Defensive-offensive"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 19,
+        "text": "Berdasarkan jarak yang diperlombakan, nomor lari dalam atletik dibagi menjadi tiga kategori utama yaitu lari jarak….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Dekat, tanggung, jauh"
+          },
+          {
+            "key": "B",
+            "text": "Pendek, menengah, jauh"
+          },
+          {
+            "key": "C",
+            "text": "Lari santai, lari menengah, lari jauh"
+          },
+          {
+            "key": "D",
+            "text": "Jogging, running, speed"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 20,
+        "text": "Teknik start dalam perlombaan lari jarak pendek adalah menggunakan start jongkok, sedangkan untuk lari jarak jauh menggunakan start….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Berdiri"
+          },
+          {
+            "key": "B",
+            "text": "Guling"
+          },
+          {
+            "key": "C",
+            "text": "Melayang"
+          },
+          {
+            "key": "D",
+            "text": "Lompat"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 21,
+        "text": "Untuk nomor lari jarak menengah, jarak yang dilombakan antara lain….",
+        "options": [
+          {
+            "key": "A",
+            "text": "1.500 m"
+          },
+          {
+            "key": "B",
+            "text": "10.000 m"
+          },
+          {
+            "key": "C",
+            "text": "400 m"
+          },
+          {
+            "key": "D",
+            "text": "100 m"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 22,
+        "context": "Perhatikan tabel teknik start Lari Estafet (4 x 100 m / 4 x 400 m) berikut!\n• Pelari 1 : Start Jongkok\n• Pelari 2 : [ ?? ]\n• Pelari 3 : Start Melayang\n• Pelari 4 : Start Melayang",
+        "text": "Dalam lari estafet (lari sambung), Pelari 1 menggunakan start jongkok, sedangkan Pelari 2 menggunakan….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Start berdiri"
+          },
+          {
+            "key": "B",
+            "text": "Start melayang"
+          },
+          {
+            "key": "C",
+            "text": "Start jongkok"
+          },
+          {
+            "key": "D",
+            "text": "Start lompat"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 23,
+        "text": "Posisi badan yang membuat pelari dapat berlari semakin cepat yaitu….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Menunduk"
+          },
+          {
+            "key": "B",
+            "text": "Condong ke depan"
+          },
+          {
+            "key": "C",
+            "text": "Tegak"
+          },
+          {
+            "key": "D",
+            "text": "Membungkuk"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 24,
+        "text": "Ketika menerima tongkat estafet dengan cara tidak melihat (non-visual), maka penerima harus menjulurkan tangannya ke arah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Samping kiri"
+          },
+          {
+            "key": "B",
+            "text": "Belakang"
+          },
+          {
+            "key": "C",
+            "text": "Depan"
+          },
+          {
+            "key": "D",
+            "text": "Samping kanan"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 25,
+        "text": "Cara pemindahan tongkat estafet di mana pelari penerima tongkat menerima tanpa menoleh ke belakang dinamakan cara….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Non-visual"
+          },
+          {
+            "key": "B",
+            "text": "Visual"
+          },
+          {
+            "key": "C",
+            "text": "Non-blind"
+          },
+          {
+            "key": "D",
+            "text": "Blind"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 26,
+        "text": "Induk organisasi pencak silat nasional adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "PSI"
+          },
+          {
+            "key": "B",
+            "text": "PSSI"
+          },
+          {
+            "key": "C",
+            "text": "PERSILAT"
+          },
+          {
+            "key": "D",
+            "text": "IPSI"
+          }
+        ],
+        "answerKey": "D"
+      },
+      {
+        "no": 27,
+        "text": "Program latihan fisik harus direncanakan dengan baik dan sistematis serta ditujukan untuk….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Meningkatkan pertumbuhan badan"
+          },
+          {
+            "key": "B",
+            "text": "Meningkatkan kesegaran jasmani dan kemampuan fungsional organ tubuh"
+          },
+          {
+            "key": "C",
+            "text": "Pencegahan terhadap wabah penyakit"
+          },
+          {
+            "key": "D",
+            "text": "Menanggulangi serangan penyakit"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 28,
+        "text": "Di bawah ini merupakan bentuk-bentuk latihan kelincahan (agility), kecuali….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Shuttle run"
+          },
+          {
+            "key": "B",
+            "text": "Lari bolak-balik"
+          },
+          {
+            "key": "C",
+            "text": "Zig-zag run"
+          },
+          {
+            "key": "D",
+            "text": "Lari naik turun tangga"
+          }
+        ],
+        "answerKey": "D"
+      },
+      {
+        "no": 29,
+        "text": "Gerakannya dimulai dari posisi badan telungkup, kaki rapat dan kedua tangan berpasangan di belakang kepala kemudian mengangkat badan bagian atas hingga dada tidak menyentuh lantai. Gerakan tersebut merupakan latihan….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Push up"
+          },
+          {
+            "key": "B",
+            "text": "Sit up"
+          },
+          {
+            "key": "C",
+            "text": "Back up"
+          },
+          {
+            "key": "D",
+            "text": "Pull up"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 30,
+        "text": "Latihan kebugaran jasmani yang dilakukan secara teratur akan membantu seseorang mengurangi risiko penyakit….",
+        "options": [
+          {
+            "key": "A",
+            "text": "HIV/AIDS"
+          },
+          {
+            "key": "B",
+            "text": "Jantung"
+          },
+          {
+            "key": "C",
+            "text": "Liver"
+          },
+          {
+            "key": "D",
+            "text": "Paru-paru"
+          }
+        ],
+        "answerKey": "B"
+      }
+    ]
+  },
+  {
+    "id": "exam-nahwu-vii",
+    "code": "ASAS-NAHWU-VII",
+    "title": "Asesmen Sumatif Akhir Semester — Nahwu Shorof Kelas VII",
+    "subject": "Nahwu Shorof",
+    "classLevel": "VII",
+    "scheduleText": "Sabtu, 28 November 2026 • Jam Ke-3 (11.30 – 13.00 WIB)",
+    "dayOrder": 6,
+    "dayLabel": "Hari Ke-6 • Sabtu, 28 Nov 2026",
+    "sessionOrder": 3,
+    "durationMin": 90,
+    "status": "published",
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "questions": [
+      {
+        "no": 1,
+        "text": "Ucapan yang mengandung sebagian huruf hijaiyah merupakan pengertian dari….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Lafadz"
+          },
+          {
+            "key": "B",
+            "text": "Kalam"
+          },
+          {
+            "key": "C",
+            "text": "Murokkab"
+          },
+          {
+            "key": "D",
+            "text": "Mufid"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 2,
+        "text": "Menjadikan lafadz agar menunjukkan suatu makna dengan disengaja (menggunakan bahasa Arab) merupakan pengertian dari….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Lafadz"
+          },
+          {
+            "key": "B",
+            "text": "Murokkab"
+          },
+          {
+            "key": "C",
+            "text": "Mufid"
+          },
+          {
+            "key": "D",
+            "text": "Wadho’ / Kalam"
+          }
+        ],
+        "answerKey": "D"
+      },
+      {
+        "no": 3,
+        "text": "Kalimah (unsur penyusun kalam) terbagi menjadi tiga bagian di bawah ini, kecuali….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Isim"
+          },
+          {
+            "key": "B",
+            "text": "Fi’il"
+          },
+          {
+            "key": "C",
+            "text": "Huruf"
+          },
+          {
+            "key": "D",
+            "text": "Wadho’"
+          }
+        ],
+        "answerKey": "D"
+      },
+      {
+        "no": 4,
+        "text": "Kalimah yang menunjukkan makna mandiri (dengan dirinya sendiri) dan tidak disertai dengan pengertian zaman (waktu) adalah pengertian dari….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Isim"
+          },
+          {
+            "key": "B",
+            "text": "Fi’il"
+          },
+          {
+            "key": "C",
+            "text": "Huruf"
+          },
+          {
+            "key": "D",
+            "text": "Semua salah"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 5,
+        "text": "Di bawah ini contoh kalimah fi’il, kecuali….",
+        "options": [
+          {
+            "key": "A",
+            "text": "كَتَبَ"
+          },
+          {
+            "key": "B",
+            "text": "يَكْتُبُ"
+          },
+          {
+            "key": "C",
+            "text": "اُكْتُبْ"
+          },
+          {
+            "key": "D",
+            "text": "كِتَابٌ"
+          }
+        ],
+        "answerKey": "D"
+      },
+      {
+        "no": 6,
+        "text": "Ada berapakah pembagian I’rob dalam ilmu Nahwu….",
+        "options": [
+          {
+            "key": "A",
+            "text": "2"
+          },
+          {
+            "key": "B",
+            "text": "3"
+          },
+          {
+            "key": "C",
+            "text": "4"
+          },
+          {
+            "key": "D",
+            "text": "5"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 7,
+        "text": "Lafadz ضَرَبَ - يَضْرِبُ (Fathun - Kasrun) termasuk tsulatsi mujarrod bab ke….",
+        "options": [
+          {
+            "key": "A",
+            "text": "1"
+          },
+          {
+            "key": "B",
+            "text": "2"
+          },
+          {
+            "key": "C",
+            "text": "3"
+          },
+          {
+            "key": "D",
+            "text": "4"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 8,
+        "text": "Apa shighotnya lafadz لَا تَنْصُرْ ….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Fi’il Madhi"
+          },
+          {
+            "key": "B",
+            "text": "Fi’il Mudhore’"
+          },
+          {
+            "key": "C",
+            "text": "Fi’il Amr"
+          },
+          {
+            "key": "D",
+            "text": "Fi’il Nahi"
+          }
+        ],
+        "answerKey": "D"
+      },
+      {
+        "no": 9,
+        "text": "Apa shighotnya lafadz وَعَدَ ….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Fi’il Madhi"
+          },
+          {
+            "key": "B",
+            "text": "Fi’il Mudhore’"
+          },
+          {
+            "key": "C",
+            "text": "Fi’il Amr"
+          },
+          {
+            "key": "D",
+            "text": "Fi’il Nahi"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 10,
+        "text": "Apa isim fa’ilnya lafadz وَجَبَ ….",
+        "options": [
+          {
+            "key": "A",
+            "text": "وَاجِبٌ"
+          },
+          {
+            "key": "B",
+            "text": "يَجِبُ"
+          },
+          {
+            "key": "C",
+            "text": "وُجُوْبًا"
+          },
+          {
+            "key": "D",
+            "text": "جِبْ"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 11,
+        "text": "Pengertian tasyrif (تَصْرِيْف) menurut bahasa adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Perubahan akhir kalimah"
+          },
+          {
+            "key": "B",
+            "text": "Perubahan bentuk"
+          },
+          {
+            "key": "C",
+            "text": "Perubahan lafadz"
+          },
+          {
+            "key": "D",
+            "text": "Semua salah"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 12,
+        "text": "Perubahan dengan memindah asal yang satu kepada contoh-contoh yang berbeda dengan memandang makna yang dikehendaki adalah pengertian dari….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tashrif menurut istilah"
+          },
+          {
+            "key": "B",
+            "text": "Tashrif menurut lughowi"
+          },
+          {
+            "key": "C",
+            "text": "Wazan"
+          },
+          {
+            "key": "D",
+            "text": "Mauzun"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 13,
+        "text": "Ada berapa bab fi’il dalam tsulatsi mujarrod….",
+        "options": [
+          {
+            "key": "A",
+            "text": "2"
+          },
+          {
+            "key": "B",
+            "text": "6"
+          },
+          {
+            "key": "C",
+            "text": "4"
+          },
+          {
+            "key": "D",
+            "text": "8"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 14,
+        "text": "Ada berapa jumlah huruf mudhoro’ah (أ ن ي ت)….",
+        "options": [
+          {
+            "key": "A",
+            "text": "2"
+          },
+          {
+            "key": "B",
+            "text": "6"
+          },
+          {
+            "key": "C",
+            "text": "4"
+          },
+          {
+            "key": "D",
+            "text": "8"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 15,
+        "text": "Difathahkan ‘ain fi’il madhinya dan didhommahkan ‘ain fi’il mudhorenya (فَعَلَ - يَفْعُلُ) adalah ciri dari fi’il tsulatsi mujarrod bab ke….",
+        "options": [
+          {
+            "key": "A",
+            "text": "1"
+          },
+          {
+            "key": "B",
+            "text": "3"
+          },
+          {
+            "key": "C",
+            "text": "2"
+          },
+          {
+            "key": "D",
+            "text": "4"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 16,
+        "text": "Menentukan kalimah dengan memandang huruf, harokat dan sukunnya kalimah adalah pengertian dari….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tashrif"
+          },
+          {
+            "key": "B",
+            "text": "Bina’"
+          },
+          {
+            "key": "C",
+            "text": "Wazan"
+          },
+          {
+            "key": "D",
+            "text": "Muthobaqoh"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 17,
+        "text": "Bina’ apa yang terdapat pada lafadz فَعَلَ / نَصَرَ….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Shohih"
+          },
+          {
+            "key": "B",
+            "text": "Ajwaf"
+          },
+          {
+            "key": "C",
+            "text": "Mudho’af"
+          },
+          {
+            "key": "D",
+            "text": "Mitsal"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 18,
+        "text": "Ada berapakah jumlah huruf ‘illat (و ا ي)….",
+        "options": [
+          {
+            "key": "A",
+            "text": "1"
+          },
+          {
+            "key": "B",
+            "text": "3"
+          },
+          {
+            "key": "C",
+            "text": "2"
+          },
+          {
+            "key": "D",
+            "text": "4"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 19,
+        "text": "Di bawah ini adalah ciri dari bab tsulatsi mujarrod dari bab 1 sampai dengan bab 6, kecuali….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Fathun - Dhommun"
+          },
+          {
+            "key": "B",
+            "text": "Fathun - Fathun (Fathatani)"
+          },
+          {
+            "key": "C",
+            "text": "Fathun - Kasrun"
+          },
+          {
+            "key": "D",
+            "text": "Kasrun - Dhommun"
+          }
+        ],
+        "answerKey": "D"
+      },
+      {
+        "no": 20,
+        "text": "Di bawah ini yang termasuk huruf mudhoro’ah, kecuali….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Nun (ن)"
+          },
+          {
+            "key": "B",
+            "text": "Ya (ي)"
+          },
+          {
+            "key": "C",
+            "text": "Wawu (و)"
+          },
+          {
+            "key": "D",
+            "text": "Ta (ت)"
+          }
+        ],
+        "answerKey": "C"
+      }
+    ]
+  },
+  {
+    "id": "exam-nahwu-viii",
+    "code": "ASAS-NAHWU-VIII",
+    "title": "Asesmen Sumatif Akhir Semester — Nahwu Shorof Kelas VIII",
+    "subject": "Nahwu Shorof",
+    "classLevel": "VIII",
+    "scheduleText": "Sabtu, 28 November 2026 • Jam Ke-3 (11.30 – 13.00 WIB)",
+    "dayOrder": 6,
+    "dayLabel": "Hari Ke-6 • Sabtu, 28 Nov 2026",
+    "sessionOrder": 3,
+    "durationMin": 90,
+    "status": "published",
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "questions": [
+      {
+        "no": 1,
+        "text": "Perubahan akhir kalimah karena perbedaan ‘amil yang memasukinya, baik secara lafadz atau perkiraan (taqdir) adalah pengertian dari….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Kalam"
+          },
+          {
+            "key": "B",
+            "text": "I’rob"
+          },
+          {
+            "key": "C",
+            "text": "Isim"
+          },
+          {
+            "key": "D",
+            "text": "Fi’il"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 2,
+        "text": "Lafadz yang berubah dari bentuk mufradnya untuk menunjukkan arti banyak (tiga atau lebih) adalah pengertian dari….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Isim Mufrad"
+          },
+          {
+            "key": "B",
+            "text": "Jamak Taksir"
+          },
+          {
+            "key": "C",
+            "text": "Jamak Muannats Salim"
+          },
+          {
+            "key": "D",
+            "text": "Semua salah"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 3,
+        "text": "Di bawah ini adalah pembagian i’rob, kecuali….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Rofa’"
+          },
+          {
+            "key": "B",
+            "text": "Nashab"
+          },
+          {
+            "key": "C",
+            "text": "Lafadz"
+          },
+          {
+            "key": "D",
+            "text": "Jazm"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 4,
+        "text": "Tanda-tanda kalimah isim disebutkan di bawah ini, kecuali….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Khafadh / Jer"
+          },
+          {
+            "key": "B",
+            "text": "Tanwin"
+          },
+          {
+            "key": "C",
+            "text": "Alif Lam (ال)"
+          },
+          {
+            "key": "D",
+            "text": "Lafadz"
+          }
+        ],
+        "answerKey": "D"
+      },
+      {
+        "no": 5,
+        "text": "Di bawah ini contoh kalimah fi’il, kecuali….",
+        "options": [
+          {
+            "key": "A",
+            "text": "كَتَبَ"
+          },
+          {
+            "key": "B",
+            "text": "يَكْتُبُ"
+          },
+          {
+            "key": "C",
+            "text": "اُكْتُبْ"
+          },
+          {
+            "key": "D",
+            "text": "كِتَابٌ"
+          }
+        ],
+        "answerKey": "D"
+      },
+      {
+        "no": 6,
+        "text": "Ada berapakah pembagian I’rob….",
+        "options": [
+          {
+            "key": "A",
+            "text": "2"
+          },
+          {
+            "key": "B",
+            "text": "3"
+          },
+          {
+            "key": "C",
+            "text": "4"
+          },
+          {
+            "key": "D",
+            "text": "5"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 7,
+        "text": "Ada berapakah tanda-tanda bagi I’rob Rofa’ (Dhommah, Wawu, Alif, Nun)….",
+        "options": [
+          {
+            "key": "A",
+            "text": "2"
+          },
+          {
+            "key": "B",
+            "text": "3"
+          },
+          {
+            "key": "C",
+            "text": "4"
+          },
+          {
+            "key": "D",
+            "text": "5"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 8,
+        "text": "Apa shighotnya lafadz لَا تَنْصُرْ ….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Fi’il Madhi"
+          },
+          {
+            "key": "B",
+            "text": "Fi’il Mudhore’"
+          },
+          {
+            "key": "C",
+            "text": "Fi’il Amr"
+          },
+          {
+            "key": "D",
+            "text": "Fi’il Nahi"
+          }
+        ],
+        "answerKey": "D"
+      },
+      {
+        "no": 9,
+        "text": "Apa shighotnya lafadz وَعَدَ ….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Fi’il Madhi"
+          },
+          {
+            "key": "B",
+            "text": "Fi’il Mudhore’"
+          },
+          {
+            "key": "C",
+            "text": "Fi’il Amr"
+          },
+          {
+            "key": "D",
+            "text": "Fi’il Nahi"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 10,
+        "text": "Apa isim fa’ilnya lafadz وَجَبَ ….",
+        "options": [
+          {
+            "key": "A",
+            "text": "وَاجِبٌ"
+          },
+          {
+            "key": "B",
+            "text": "يَجِبُ"
+          },
+          {
+            "key": "C",
+            "text": "وُجُوْبًا"
+          },
+          {
+            "key": "D",
+            "text": "جِبْ"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 11,
+        "text": "Pengertian tasyrif (تَصْرِيْف) menurut bahasa adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Perubahan akhir kalimah"
+          },
+          {
+            "key": "B",
+            "text": "Perubahan bentuk"
+          },
+          {
+            "key": "C",
+            "text": "Perubahan lafadz"
+          },
+          {
+            "key": "D",
+            "text": "Semua salah"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 12,
+        "text": "Perubahan dengan memindah asal yang satu kepada contoh-contoh yang berbeda dengan memandang makna yang dikehendaki adalah pengertian dari….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tashrif menurut istilah"
+          },
+          {
+            "key": "B",
+            "text": "Tashrif menurut lughowi"
+          },
+          {
+            "key": "C",
+            "text": "Wazan"
+          },
+          {
+            "key": "D",
+            "text": "Mauzun"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 13,
+        "text": "Ada berapa bab fi’il dalam tsulatsi mujarrod….",
+        "options": [
+          {
+            "key": "A",
+            "text": "2"
+          },
+          {
+            "key": "B",
+            "text": "6"
+          },
+          {
+            "key": "C",
+            "text": "4"
+          },
+          {
+            "key": "D",
+            "text": "8"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 14,
+        "text": "Ada berapa jumlah huruf mudhoro’ah (أ ن ي ت)….",
+        "options": [
+          {
+            "key": "A",
+            "text": "2"
+          },
+          {
+            "key": "B",
+            "text": "6"
+          },
+          {
+            "key": "C",
+            "text": "4"
+          },
+          {
+            "key": "D",
+            "text": "8"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 15,
+        "text": "Difathahkan ‘ain fi’il madhinya dan didhommahkan ‘ain fi’il mudhorenya (فَعَلَ - يَفْعُلُ) adalah ciri dari fi’il tsulatsi mujarrod bab ke….",
+        "options": [
+          {
+            "key": "A",
+            "text": "1"
+          },
+          {
+            "key": "B",
+            "text": "3"
+          },
+          {
+            "key": "C",
+            "text": "2"
+          },
+          {
+            "key": "D",
+            "text": "4"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 16,
+        "text": "Menentukan kalimah dengan memandang huruf, harokat dan sukunnya kalimah adalah pengertian dari….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tashrif"
+          },
+          {
+            "key": "B",
+            "text": "Bina’"
+          },
+          {
+            "key": "C",
+            "text": "Wazan"
+          },
+          {
+            "key": "D",
+            "text": "Muthobaqoh"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 17,
+        "text": "Bina’ apa yang terdapat pada lafadz فَعَلَ / نَصَرَ….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Shohih"
+          },
+          {
+            "key": "B",
+            "text": "Ajwaf"
+          },
+          {
+            "key": "C",
+            "text": "Mudho’af"
+          },
+          {
+            "key": "D",
+            "text": "Mitsal"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 18,
+        "text": "Ada berapakah jumlah huruf ‘illat (و ا ي)….",
+        "options": [
+          {
+            "key": "A",
+            "text": "1"
+          },
+          {
+            "key": "B",
+            "text": "3"
+          },
+          {
+            "key": "C",
+            "text": "2"
+          },
+          {
+            "key": "D",
+            "text": "4"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 19,
+        "text": "Di bawah ini adalah ciri dari bab tsulatsi mujarrod dari bab 1 sampai dengan bab 6, kecuali….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Fathun - Dhommun"
+          },
+          {
+            "key": "B",
+            "text": "Fathun - Fathun (Fathatani)"
+          },
+          {
+            "key": "C",
+            "text": "Fathun - Kasrun"
+          },
+          {
+            "key": "D",
+            "text": "Kasrun - Dhommun"
+          }
+        ],
+        "answerKey": "D"
+      },
+      {
+        "no": 20,
+        "text": "Di bawah ini yang termasuk huruf mudhoro’ah, kecuali….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Nun (ن)"
+          },
+          {
+            "key": "B",
+            "text": "Ya (ي)"
+          },
+          {
+            "key": "C",
+            "text": "Wawu (و)"
+          },
+          {
+            "key": "D",
+            "text": "Ta (ت)"
+          }
+        ],
+        "answerKey": "C"
+      }
+    ]
+  },
+  {
+    "id": "exam-nahwu-ix",
+    "code": "ASAS-NAHWU-IX",
+    "title": "Asesmen Sumatif Akhir Semester — Nahwu Shorof Kelas IX",
+    "subject": "Nahwu Shorof",
+    "classLevel": "IX",
+    "scheduleText": "Sabtu, 28 November 2026 • Jam Ke-3 (11.30 – 13.00 WIB)",
+    "dayOrder": 6,
+    "dayLabel": "Hari Ke-6 • Sabtu, 28 Nov 2026",
+    "sessionOrder": 3,
+    "durationMin": 90,
+    "status": "published",
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "questions": [
+      {
+        "no": 1,
+        "text": "Lafadz yang tersusun dan memberikan faidah dengan disengaja dengan menggunakan bahasa Arab adalah pengertian dari….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Lafadz"
+          },
+          {
+            "key": "B",
+            "text": "Murokkab"
+          },
+          {
+            "key": "C",
+            "text": "Kalam"
+          },
+          {
+            "key": "D",
+            "text": "Mufid"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 2,
+        "text": "Setiap ucapan yang membatalkan shalat yang berupa satu huruf yang memahamkan atau dua huruf walaupun tidak memberi paham adalah pengertian kalam menurut….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Istilah"
+          },
+          {
+            "key": "B",
+            "text": "Ulama fiqh"
+          },
+          {
+            "key": "C",
+            "text": "Ulama nahwu"
+          },
+          {
+            "key": "D",
+            "text": "Ulama ahli ushul"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 3,
+        "text": "Kalimah yang menunjukkan makna dengan membutuhkan kalimah lain disebut….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Kalam"
+          },
+          {
+            "key": "B",
+            "text": "Isim"
+          },
+          {
+            "key": "C",
+            "text": "Fi’il"
+          },
+          {
+            "key": "D",
+            "text": "Huruf"
+          }
+        ],
+        "answerKey": "D"
+      },
+      {
+        "no": 4,
+        "text": "Di bawah ini contoh kalimah isim, kecuali….",
+        "options": [
+          {
+            "key": "A",
+            "text": "اللهُ"
+          },
+          {
+            "key": "B",
+            "text": "مُحَمَّدٌ"
+          },
+          {
+            "key": "C",
+            "text": "فَعَلَ"
+          },
+          {
+            "key": "D",
+            "text": "بَيْتٌ"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 5,
+        "text": "Susunan lafadz yang terdiri dari mudhof dan mudhof ilaihi disebut….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tarkib mazji"
+          },
+          {
+            "key": "B",
+            "text": "Tarkib taushifi"
+          },
+          {
+            "key": "C",
+            "text": "Tarkib idhofi"
+          },
+          {
+            "key": "D",
+            "text": "Tarkib taqyidi"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 6,
+        "text": "Dua kalimah yang disusun dan dijadikan satu kalimah disebut….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tarkib mazji"
+          },
+          {
+            "key": "B",
+            "text": "Tarkib taushifi"
+          },
+          {
+            "key": "C",
+            "text": "Tarkib idhofi"
+          },
+          {
+            "key": "D",
+            "text": "Tarkib taqyidi"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 7,
+        "text": "Kalimah yang menunjukkan makna dengan dirinya sendiri disertai salah satu dari 3 zaman adalah pengertian dari….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Isim"
+          },
+          {
+            "key": "B",
+            "text": "Huruf"
+          },
+          {
+            "key": "C",
+            "text": "Fi’il"
+          },
+          {
+            "key": "D",
+            "text": "Lafadz"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 8,
+        "text": "Kalimah terbagi menjadi 3 bagian, yaitu….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Isim, fi’il dan huruf"
+          },
+          {
+            "key": "B",
+            "text": "Fi’il, huruf dan mufid"
+          },
+          {
+            "key": "C",
+            "text": "Isim, fi’il dan lafadz"
+          },
+          {
+            "key": "D",
+            "text": "Isim, huruf dan murokkab"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 9,
+        "text": "Hukum asal dalam kalimah isim adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Mabni"
+          },
+          {
+            "key": "B",
+            "text": "Muhmal"
+          },
+          {
+            "key": "C",
+            "text": "Mu’rob"
+          },
+          {
+            "key": "D",
+            "text": "Semua salah"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 10,
+        "text": "Ada berapa zaman yang terdapat pada fi’il mudhore’….",
+        "options": [
+          {
+            "key": "A",
+            "text": "1"
+          },
+          {
+            "key": "B",
+            "text": "3"
+          },
+          {
+            "key": "C",
+            "text": "2"
+          },
+          {
+            "key": "D",
+            "text": "4"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 11,
+        "text": "Pengertian tasyrif (تَصْرِيْف) menurut bahasa adalah….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Perubahan akhir kalimah"
+          },
+          {
+            "key": "B",
+            "text": "Perubahan bentuk"
+          },
+          {
+            "key": "C",
+            "text": "Perubahan lafadz"
+          },
+          {
+            "key": "D",
+            "text": "Semua salah"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 12,
+        "text": "Perubahan dengan memindah asal yang satu kepada contoh-contoh yang berbeda dengan memandang makna yang dikehendaki adalah pengertian dari….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tashrif menurut istilah"
+          },
+          {
+            "key": "B",
+            "text": "Tashrif menurut lughowi"
+          },
+          {
+            "key": "C",
+            "text": "Wazan"
+          },
+          {
+            "key": "D",
+            "text": "Mauzun"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 13,
+        "text": "Ada berapa bab fi’il dalam tsulatsi mujarrod….",
+        "options": [
+          {
+            "key": "A",
+            "text": "2"
+          },
+          {
+            "key": "B",
+            "text": "6"
+          },
+          {
+            "key": "C",
+            "text": "4"
+          },
+          {
+            "key": "D",
+            "text": "8"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 14,
+        "text": "Ada berapa jumlah huruf mudhoro’ah (أ ن ي ت)….",
+        "options": [
+          {
+            "key": "A",
+            "text": "2"
+          },
+          {
+            "key": "B",
+            "text": "6"
+          },
+          {
+            "key": "C",
+            "text": "4"
+          },
+          {
+            "key": "D",
+            "text": "8"
+          }
+        ],
+        "answerKey": "C"
+      },
+      {
+        "no": 15,
+        "text": "Difathahkan ‘ain fi’il madhinya dan didhommahkan ‘ain fi’il mudhorenya (فَعَلَ - يَفْعُلُ) adalah ciri dari fi’il tsulatsi mujarrod bab ke….",
+        "options": [
+          {
+            "key": "A",
+            "text": "1"
+          },
+          {
+            "key": "B",
+            "text": "3"
+          },
+          {
+            "key": "C",
+            "text": "2"
+          },
+          {
+            "key": "D",
+            "text": "4"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 16,
+        "text": "Menentukan kalimah dengan memandang huruf, harokat dan sukunnya kalimah adalah pengertian dari….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tashrif"
+          },
+          {
+            "key": "B",
+            "text": "Bina’"
+          },
+          {
+            "key": "C",
+            "text": "Wazan"
+          },
+          {
+            "key": "D",
+            "text": "Muthobaqoh"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 17,
+        "text": "Bina’ apa yang terdapat pada lafadz فَعَلَ / نَصَرَ….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Shohih"
+          },
+          {
+            "key": "B",
+            "text": "Ajwaf"
+          },
+          {
+            "key": "C",
+            "text": "Mudho’af"
+          },
+          {
+            "key": "D",
+            "text": "Mitsal"
+          }
+        ],
+        "answerKey": "A"
+      },
+      {
+        "no": 18,
+        "text": "Ada berapakah jumlah huruf ‘illat (و ا ي)….",
+        "options": [
+          {
+            "key": "A",
+            "text": "1"
+          },
+          {
+            "key": "B",
+            "text": "3"
+          },
+          {
+            "key": "C",
+            "text": "2"
+          },
+          {
+            "key": "D",
+            "text": "4"
+          }
+        ],
+        "answerKey": "B"
+      },
+      {
+        "no": 19,
+        "text": "Di bawah ini adalah ciri dari bab tsulatsi mujarrod dari bab 1 sampai dengan bab 6, kecuali….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Fathun - Dhommun"
+          },
+          {
+            "key": "B",
+            "text": "Fathun - Fathun (Fathatani)"
+          },
+          {
+            "key": "C",
+            "text": "Fathun - Kasrun"
+          },
+          {
+            "key": "D",
+            "text": "Kasrun - Dhommun"
+          }
+        ],
+        "answerKey": "D"
+      },
+      {
+        "no": 20,
+        "text": "Di bawah ini yang termasuk huruf mudhoro’ah, kecuali….",
+        "options": [
+          {
+            "key": "A",
+            "text": "Nun (ن)"
+          },
+          {
+            "key": "B",
+            "text": "Ya (ي)"
+          },
+          {
+            "key": "C",
+            "text": "Wawu (و)"
+          },
+          {
+            "key": "D",
+            "text": "Ta (ت)"
+          }
+        ],
+        "answerKey": "C"
+      }
+    ]
   }
 ];
